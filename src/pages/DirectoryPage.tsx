@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { img } from '../utils/img'
 
 type Tenant = {
   floor: string
@@ -64,7 +65,7 @@ export default function DirectoryPage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '280px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/exterior.jpg')" }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('exterior.jpg')})` }} />
         <div className="page-hero-overlay" />
         <div className="page-hero-content">
           <span className="page-floor-label">The Forge · 285 Liberty St. N.E.</span>

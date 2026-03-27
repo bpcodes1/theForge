@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import NewsletterStrip from '../components/NewsletterStrip'
+import { img } from '../utils/img'
 
 export default function WomensCollectivePage() {
   useEffect(() => { document.title = "Women's Collective — The Forge Salem" }, [])
@@ -12,7 +13,7 @@ export default function WomensCollectivePage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/womens-collective.jpg')" }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('womens-collective.jpg')})` }} />
         <div className="page-hero-overlay" style={{ background: 'linear-gradient(to bottom,rgba(225,6,0,.12) 0%,rgba(22,31,40,.78) 100%)' }} />
         <div className="page-hero-content">
           <span className="page-floor-label" style={{ color: 'var(--confidence)' }}>Second Floor · 285 Liberty St. N.E.</span>
@@ -48,7 +49,7 @@ export default function WomensCollectivePage() {
       {/* CLINK! */}
       <div className="clink-split" id="clink">
         <div className="clink-img">
-          <img src="/images/clink.jpg" alt="Clink! champagne and martini bar" loading="lazy" />
+          <img src={img('clink.jpg')} alt="Clink! champagne and martini bar" loading="lazy" />
           <span className="clink-badge">Now Open</span>
         </div>
         <div className="clink-info">
@@ -99,9 +100,9 @@ export default function WomensCollectivePage() {
       {/* LADIES ROOM */}
       <div className="ladies-split" id="ladies-room">
         <div className="ladies-imgs">
-          <img src="/images/ladies-room-1.jpg" alt="The Ladies' Room" loading="lazy" />
-          <img src="/images/ladies-room-2.jpg" alt="Pink marble sinks" loading="lazy" />
-          <img src="/images/ladies-room-3.jpg" alt="The Ladies Room neon sign" loading="lazy" />
+          <img src={img('ladies-room-1.jpg')} alt="The Ladies' Room" loading="lazy" />
+          <img src={img('ladies-room-2.jpg')} alt="Pink marble sinks" loading="lazy" />
+          <img src={img('ladies-room-3.jpg')} alt="The Ladies Room neon sign" loading="lazy" />
         </div>
         <div className="ladies-info">
           <span className="ladies-eyebrow">Yes, We Need to Talk About This</span>

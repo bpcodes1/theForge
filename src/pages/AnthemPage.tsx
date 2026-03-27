@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import NewsletterStrip from '../components/NewsletterStrip'
+import { img } from '../utils/img'
 
 export default function AnthemPage() {
   useEffect(() => { document.title = 'Anthem Strategists — The Forge Salem' }, [])
@@ -12,7 +13,7 @@ export default function AnthemPage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/anthem.jpg')", backgroundPosition: 'center 30%' }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('anthem.jpg')})`, backgroundPosition: 'center 30%' }} />
         <div className="page-hero-overlay" style={{ background: 'linear-gradient(to bottom, rgba(22,31,40,0.88) 0%, rgba(22,31,40,0.2) 52%, rgba(22,31,40,0.88) 100%)' }} />
         <div className="page-hero-content">
           <span className="page-floor-label" style={{ color: 'rgba(255,255,255,0.72)', textShadow: '0 1px 6px rgba(0,0,0,0.5)', fontSize: '0.65rem' }}>Third Floor · 285 Liberty St. N.E.</span>
@@ -67,7 +68,7 @@ export default function AnthemPage() {
       {/* EXPERIENCE SPLIT */}
       <div className="experience-grid">
         <div className="experience-img">
-          <img src="/images/anthem2.jpg" alt="Anthem Strategists — third floor" loading="lazy" />
+          <img src={img('anthem2.jpg')} alt="Anthem Strategists — third floor" loading="lazy" />
         </div>
         <div className="experience-content">
           <span className="section-label" style={{ color: 'var(--confidence)' }}>The Location</span>

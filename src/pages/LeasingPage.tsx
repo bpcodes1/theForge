@@ -2,6 +2,7 @@ import { useEffect, useState, FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { img } from '../utils/img'
 
 export default function LeasingPage() {
   useEffect(() => { document.title = 'Leasing — The Forge Salem' }, [])
@@ -26,7 +27,7 @@ export default function LeasingPage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '280px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/building-exterior.jpg')" }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('building-exterior.jpg')})` }} />
         <div className="page-hero-overlay" />
         <div className="page-hero-content">
           <span className="page-floor-label">The Forge · 285 Liberty St. N.E.</span>
@@ -43,7 +44,7 @@ export default function LeasingPage() {
       {/* INTRO SPLIT */}
       <div className="lease-intro">
         <div className="lease-intro-img">
-          <img src="/images/gallery-1.jpg" alt="The Forge interior" loading="lazy" />
+          <img src={img('gallery-1.jpg')} alt="The Forge interior" loading="lazy" />
         </div>
         <div className="lease-intro-body">
           <div className="lease-eyebrow">Leasing at The Forge</div>
@@ -83,7 +84,7 @@ export default function LeasingPage() {
       {/* INQUIRY FORM */}
       <div className="inquiry-wrap" id="inquiry">
         <div className="inquiry-img">
-          <img src="/images/gallery-4.jpg" alt="The Forge space" loading="lazy" />
+          <img src={img('gallery-4.jpg')} alt="The Forge space" loading="lazy" />
         </div>
         <div className="inquiry-form-col">
           <h2>Express Interest</h2>

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { img } from '../utils/img'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -25,7 +26,7 @@ export default function Nav() {
         <li><Link to="/cellar-54" className={isActive('/cellar-54')}>Lower Level</Link></li>
       </ul>
       <Link to="/" className="forge-logo forge-logo--nav" aria-label="The Forge" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-        <img src="/images/logo2.png" alt="The Forge" style={{ height: '70px', width: 'auto', display: 'block' }} />
+        <img src={img('logo2.png')} alt="The Forge" style={{ height: '70px', width: 'auto', display: 'block' }} />
       </Link>
       <div className="nav-right">
         <ul className="nav-links nav-links--right">

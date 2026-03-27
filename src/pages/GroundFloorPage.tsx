@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import NewsletterStrip from '../components/NewsletterStrip'
+import { img } from '../utils/img'
 
 export default function GroundFloorPage() {
   useEffect(() => { document.title = 'Ground Floor — The Forge Salem' }, [])
@@ -12,7 +13,7 @@ export default function GroundFloorPage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/ground-floor.jpg')" }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('ground-floor.jpg')})` }} />
         <div className="page-hero-overlay" />
         <div className="page-hero-content">
           <span className="page-floor-label" style={{ color: 'rgba(255,255,255,0.72)', textShadow: '0 1px 6px rgba(0,0,0,0.5)', fontSize: '0.65rem' }}>Ground Floor · 285 Liberty St. N.E.</span>
@@ -30,7 +31,7 @@ export default function GroundFloorPage() {
       {/* BONZAI */}
       <div className="feature-split">
         <div className="feature-visual">
-          <img src="/images/bonzai.jpg" alt="Bonzai restaurant" loading="lazy" />
+          <img src={img('bonzai.jpg')} alt="Bonzai restaurant" loading="lazy" />
         </div>
         <div className="feature-body feature-body--paper">
           <div className="feature-eyebrow">Ground Floor</div>
@@ -52,7 +53,7 @@ export default function GroundFloorPage() {
       {/* JADE DUMPLINGS */}
       <div className="feature-split feature-split--rev">
         <div className="feature-visual">
-          <img src="/images/jade-dumplings.jpg" alt="Jade Dumplings" loading="lazy" />
+          <img src={img('jade-dumplings.jpg')} alt="Jade Dumplings" loading="lazy" />
         </div>
         <div className="feature-body feature-body--cream">
           <div className="feature-eyebrow">Ground Floor</div>
@@ -79,9 +80,9 @@ export default function GroundFloorPage() {
           </div>
         </div>
         <div className="gallery-3">
-          <div className="g3-main"><img src="/images/ground-floor.jpg" alt="Ground floor dining area" loading="lazy" /></div>
-          <div><img src="/images/gallery-2.jpg" alt="Bonzai interior" loading="lazy" /></div>
-          <div><img src="/images/gallery-3.jpg" alt="Jade Dumplings" loading="lazy" /></div>
+          <div className="g3-main"><img src={img('ground-floor.jpg')} alt="Ground floor dining area" loading="lazy" /></div>
+          <div><img src={img('gallery-2.jpg')} alt="Bonzai interior" loading="lazy" /></div>
+          <div><img src={img('gallery-3.jpg')} alt="Jade Dumplings" loading="lazy" /></div>
         </div>
       </div>
 

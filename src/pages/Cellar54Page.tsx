@@ -2,6 +2,7 @@ import { useEffect, useState, FormEvent } from 'react'
 import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { img } from '../utils/img'
 
 export default function Cellar54Page() {
   useEffect(() => { document.title = 'Cellar 54 — The Forge Salem' }, [])
@@ -26,7 +27,7 @@ export default function Cellar54Page() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: "url('/images/cellar54.jpg')" }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('cellar54.jpg')})` }} />
         <div className="page-hero-overlay" style={{ background: 'linear-gradient(to bottom,rgba(26,15,13,.4) 0%,rgba(26,15,13,.88) 100%)' }} />
         <div className="page-hero-content" style={{ paddingBottom: '8rem' }}>
           <span className="page-floor-label" style={{ color: 'rgba(255,255,255,0.72)', textShadow: '0 1px 6px rgba(0,0,0,0.5)', fontSize: '0.65rem' }}>Lower Level · 285 Liberty St. N.E.</span>
@@ -101,18 +102,18 @@ export default function Cellar54Page() {
           </div>
         </div>
         <div className="gallery-grid">
-          <div className="gal-item"><img src="/images/cellar54.jpg" alt="Cellar 54 main room" loading="lazy" /><span className="gal-cap">Main Room</span></div>
-          <div className="gal-item"><img src="/images/gallery-3.jpg" alt="Cellar 54 bar setup" loading="lazy" /><span className="gal-cap">Bar Setup</span></div>
-          <div className="gal-item"><img src="/images/gallery-4.jpg" alt="Cellar 54 table setting" loading="lazy" /><span className="gal-cap">Dinner Setting</span></div>
-          <div className="gal-item"><img src="/images/gallery-1.jpg" alt="Cellar 54 reception" loading="lazy" /><span className="gal-cap">Reception Style</span></div>
-          <div className="gal-item"><img src="/images/social-2.jpg" alt="Cellar 54 event" loading="lazy" /><span className="gal-cap">Event Night</span></div>
+          <div className="gal-item"><img src={img('cellar54.jpg')} alt="Cellar 54 main room" loading="lazy" /><span className="gal-cap">Main Room</span></div>
+          <div className="gal-item"><img src={img('gallery-3.jpg')} alt="Cellar 54 bar setup" loading="lazy" /><span className="gal-cap">Bar Setup</span></div>
+          <div className="gal-item"><img src={img('gallery-4.jpg')} alt="Cellar 54 table setting" loading="lazy" /><span className="gal-cap">Dinner Setting</span></div>
+          <div className="gal-item"><img src={img('gallery-1.jpg')} alt="Cellar 54 reception" loading="lazy" /><span className="gal-cap">Reception Style</span></div>
+          <div className="gal-item"><img src={img('social-2.jpg')} alt="Cellar 54 event" loading="lazy" /><span className="gal-cap">Event Night</span></div>
         </div>
       </div>
 
       {/* BOOKING */}
       <div className="booking-split" id="booking">
         <div className="booking-img">
-          <img src="/images/cellar54.jpg" alt="Cellar 54" loading="lazy" />
+          <img src={img('cellar54.jpg')} alt="Cellar 54" loading="lazy" />
         </div>
         <div className="booking-form-section">
           <h2>Inquire About<br />Your Event</h2>
