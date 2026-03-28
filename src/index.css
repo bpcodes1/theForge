@@ -43,7 +43,7 @@
   --section-h: 6rem;
 }
 
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
 body {
   font-family: var(--sans);
   font-weight: 300;
@@ -866,7 +866,7 @@ footer {
   .nav-links { display: none; }
   .nav-right .nav-links--right { display: none; }
   #hero { padding: 0 1.8rem 4.5rem; }
-  .hero-address { display: none; }
+  .hero-address { position: static; text-align: left; margin-top: 1rem; }
   .floors-grid { grid-template-columns: 1fr; grid-template-rows: repeat(4, 240px); }
   .events-header { grid-template-columns: 1fr; }
   .events-list { grid-template-columns: 1fr 1fr; }
@@ -934,6 +934,46 @@ footer {
 }
 @media (max-width: 600px) {
   :root { --section-h: 1.4rem; --section-v: 4rem; }
+  .hero-logo-img { margin-top: -7rem; }
+  .hero-address { position: static; text-align: left; margin-top: 1rem; }
+  .floors-btn { padding: 0.5rem 1.2rem; font-size: 0.55rem; white-space: nowrap; }
+  .section-title { white-space: nowrap; font-size: clamp(1.6rem, 7vw, 2.2rem); }
+  .floor-card-body {
+    padding: 1.4rem 1.2rem;
+    background: linear-gradient(to top, rgba(22,31,40,0.97) 0%, rgba(22,31,40,0.55) 55%, transparent 100%);
+  }
+  .floor-name { font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .floor-tenants { font-size: 0.7rem; color: rgba(183,192,200,0.9); margin-bottom: 0.6rem; }
+  .floor-level { margin-bottom: 0.3rem; }
+  .section-header { flex-direction: column; align-items: flex-start; gap: 0.8rem; margin-bottom: 2rem; }
+  .section-header p { max-width: 100% !important; text-align: left !important; }
+  .connect-map { width: 100%; height: 220px; }
+  /* ── Footer ── */
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+    padding-bottom: 1.2rem;
+  }
+  .footer-center {
+    grid-row: 1; grid-column: 1 / -1;
+    align-items: center; text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(250,245,241,0.07);
+    margin-bottom: 1rem;
+  }
+  .footer-center img { height: 120px !important; }
+  .footer-top > div:first-child { grid-row: 2; grid-column: 1; text-align: left; }
+  .footer-right { grid-row: 2; grid-column: 2; text-align: right; }
+  .footer-links-grid { display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-links-grid a { color: rgba(183,192,200,0.7); }
+  .footer-links--connect { align-items: flex-end !important; }
+  .footer-social { flex-direction: column; align-items: flex-end; gap: 0.6rem; margin-top: 1rem; }
+  .footer-bottom { flex-direction: column; gap: 0.5rem; align-items: center; text-align: center; }
+  .newsletter-box { margin: 1.5rem auto !important; padding: 2rem 1.4rem !important; width: 90%; max-width: 360px; }
+  .nl-form { max-width: 100% !important; width: 100%; }
+  .nl-input { min-width: 0; }
   .forge-logo--hero { font-size: 3.6rem; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .floors-grid { grid-template-rows: repeat(4, 200px); }

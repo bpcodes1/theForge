@@ -55,17 +55,11 @@ export default function HomePage() {
       <section id="hero">
         <div className="hero-bg" />
         <div className="hero-overlay" />
-        <span style={{
-          position: 'absolute', bottom: '4rem', right: 'var(--section-h)', zIndex: 3,
-          textAlign: 'right', fontSize: '0.57rem', letterSpacing: '0.2em',
-          textTransform: 'uppercase', color: 'rgba(220,228,235,0.88)'
-        }}>
-          285 Liberty St. N.E. &nbsp;·&nbsp; Downtown Salem, Oregon
-        </span>
         <div className="hero-content">
           <img
             src={img('logo.png')}
             alt="The Forge"
+            className="hero-logo-img"
             style={{ height: 'clamp(260px,40vw,480px)', width: 'auto', display: 'block', marginLeft: '-4rem', marginBottom: '0.5rem' }}
           />
           <p className="hero-tagline"><em>Elevated. Unapologetic. Unforgettable.</em></p>
@@ -73,6 +67,9 @@ export default function HomePage() {
             <a href="#floors" className="btn btn--ghost">Explore the Building</a>
             <a href="#events" className="btn btn--cherry" style={{ background: 'var(--cherry)', color: '#fff' }}>See What's On</a>
           </div>
+          <span className="hero-address">
+            285 Liberty St. N.E. &nbsp;·&nbsp; Downtown Salem, Oregon
+          </span>
         </div>
       </section>
 
@@ -83,7 +80,7 @@ export default function HomePage() {
             <span className="section-label section-label--light">The Building</span>
             <h2 className="section-title section-title--light">Four Floors.<br />One Address.</h2>
           </div>
-          <Link to="/faq" className="btn btn--ghost">Hours &amp; Info</Link>
+          <Link to="/faq" className="btn btn--ghost floors-btn">Hours &amp; Info</Link>
         </div>
         <div className="floors-grid">
           <Link to="/ground-floor" className="floor-card">
@@ -183,7 +180,7 @@ export default function HomePage() {
               Follow along — we're building something good.
             </p>
           </div>
-          <a href="https://www.instagram.com/theforgesalem/" target="_blank" rel="noopener" className="btn">
+          <a href="https://www.instagram.com/theforgesalem/" target="_blank" rel="noopener" className="btn btn--ghost">
             Follow on Instagram
           </a>
         </div>
@@ -207,7 +204,7 @@ export default function HomePage() {
         </div>
         <div className="social-foot">
           <span className="social-tag">#TheForge &nbsp;#ForgeSalem &nbsp;#Clink</span>
-          <a href="https://www.instagram.com/theforgesalem/" target="_blank" rel="noopener" className="btn" style={{ fontSize: '0.58rem', padding: '0.52rem 1rem' }}>
+          <a href="https://www.instagram.com/theforgesalem/" target="_blank" rel="noopener" className="btn btn--ghost" style={{ fontSize: '0.58rem', padding: '0.52rem 1rem' }}>
             View All →
           </a>
         </div>
@@ -240,6 +237,7 @@ export default function HomePage() {
             <iframe
               title="The Forge — 285 Liberty St NE, Salem OR"
               src="https://maps.google.com/maps?q=285+Liberty+St+NE+Salem+OR+97301&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              className="connect-map"
               width="100%"
               height="280"
               style={{ border: 'none', display: 'block', filter: 'grayscale(20%)' }}
@@ -253,7 +251,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div style={{ background: 'var(--void)', padding: '3.5rem 3rem 3.5rem 4rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '1.4rem', alignSelf: 'center', margin: '2.5rem 2.5rem 2.5rem 2.5rem' }}>
+        <div className="newsletter-box" style={{ background: 'var(--void)', padding: '3.5rem 3rem 3.5rem 4rem', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '1.4rem', alignSelf: 'center', margin: '2.5rem 2.5rem 2.5rem 2.5rem' }}>
           <div>
             <span style={{ fontSize: '0.54rem', fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(183,192,200,0.45)', display: 'block', marginBottom: '0.6rem' }}>Newsletter</span>
             <h2 style={{ fontFamily: 'var(--display)', fontSize: '1.8rem', fontWeight: 300, color: '#faf5f1', lineHeight: 1.2, marginBottom: '0.5rem' }}>Stay in the Know</h2>

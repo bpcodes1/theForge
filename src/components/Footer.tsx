@@ -26,7 +26,7 @@ export default function Footer() {
         </div>
         <div className="footer-right">
           <span className="footer-col-title">Connect</span>
-          <ul className="footer-links" style={{ alignItems: 'flex-end' }}>
+          <ul className="footer-links footer-links--connect" style={{ alignItems: 'flex-end' }}>
             <li><a href="mailto:inquiries@forgesalem.com">inquiries@forgesalem.com</a></li>
             <li><a href="https://forgesalem.com" target="_blank" rel="noopener">forgesalem.com</a></li>
           </ul>
