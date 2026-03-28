@@ -935,9 +935,39 @@ footer {
   .connect-info-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .booking-img { position: static; max-height: none; }
 }
+@media (min-width: 601px) and (max-width: 900px) {
+  /* ── Footer ── */
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0;
+  }
+  .footer-center {
+    grid-row: 1; grid-column: 1 / -1;
+    align-items: center; text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(250,245,241,0.07);
+    margin-bottom: 2rem;
+  }
+  .footer-center img { height: 150px !important; }
+  .footer-top > div:first-child { grid-row: 2; grid-column: 1; text-align: left; }
+  .footer-right { grid-row: 2; grid-column: 2; text-align: right; }
+  .footer-links--connect { align-items: flex-end !important; }
+  .footer-links-grid { display: flex; flex-direction: column; gap: 0.5rem; }
+  .footer-links-grid a { color: rgba(183,192,200,0.7); }
+  .footer-social { justify-content: flex-end; flex-direction: column; align-items: flex-end; gap: 0.6rem; margin-top: 1rem; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; align-items: center; gap: 0; }
+  /* ── Directory ── */
+  .dir-grid { grid-template-columns: 1fr 1fr; }
+  /* ── Floors ── */
+  .floors-grid { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(2, 260px); }
+  /* ── Events ── */
+  .events-list { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 600px) {
   :root { --section-h: 1.4rem; --section-v: 4rem; }
-  .hero-logo-img { margin-top: -8rem; }
+  .hero-logo-img { margin-top: -9rem; }
   .hero-address { position: static; text-align: left; margin-top: 1rem; }
   .floors-btn { padding: 0.5rem 1.2rem; font-size: 0.55rem; white-space: nowrap; }
   .section-title { white-space: nowrap; font-size: clamp(1.6rem, 7vw, 2.2rem); }
