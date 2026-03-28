@@ -49,7 +49,7 @@ export default function WomensCollectivePage() {
       {/* CLINK! */}
       <div className="clink-split" id="clink">
         <div className="clink-img">
-          <img src={img('clink.jpg')} alt="Clink! champagne and martini bar" loading="lazy" />
+          <img src={img('clink_bar.jpg')} alt="Clink! champagne and martini bar" loading="lazy" />
           <span className="clink-badge">Now Open</span>
         </div>
         <div className="clink-info">
@@ -100,9 +100,9 @@ export default function WomensCollectivePage() {
       {/* LADIES ROOM */}
       <div className="ladies-split" id="ladies-room">
         <div className="ladies-imgs">
-          <img src={img('ladies-room-1.jpg')} alt="The Ladies' Room" loading="lazy" />
-          <img src={img('ladies-room-2.jpg')} alt="Pink marble sinks" loading="lazy" />
-          <img src={img('ladies-room-3.jpg')} alt="The Ladies Room neon sign" loading="lazy" />
+          <img src={img('ladies_room.jpg')} alt="The Ladies' Room" loading="lazy" />
+          <img src={img('pink_marble_sinks.jpg')} alt="Pink marble sinks" loading="lazy" />
+          <img src={img('ladies_room_neon.jpg')} alt="The Ladies Room neon sign" loading="lazy" />
         </div>
         <div className="ladies-info">
           <span className="ladies-eyebrow">Yes, We Need to Talk About This</span>
