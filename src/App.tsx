@@ -29,7 +29,7 @@ function ScrollHandler() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollHandler />
       <Routes>
         <Route path="/" element={<HomePage />} />
