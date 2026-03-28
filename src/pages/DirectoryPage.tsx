@@ -68,6 +68,18 @@ const TENANTS: Tenant[] = [
     name: 'A Wonderful World', category: 'Retail', categoryKey: 'retail',
     desc: 'A thoughtfully stocked retail experience bringing something special to the ground floor of The Forge.',
   },
+  {
+    floor: 'Ground Floor', floorKey: 'ground-floor',
+    name: 'Bridal Glitter & Glam', category: 'Retail', categoryKey: 'retail',
+    logo: 'directory/first_floor/Bridal_Glitter_Glam.svg',
+    desc: 'Everything a bride needs to sparkle — bridal accessories, glam essentials, and the finishing touches that make the day unforgettable.',
+  },
+  {
+    floor: 'Ground Floor', floorKey: 'ground-floor',
+    name: 'Root Cellar Market', category: 'Food & Drink', categoryKey: 'food-drink',
+    logo: 'directory/first_floor/root_cellar.png',
+    desc: 'A curated market bringing locally sourced goods, pantry staples, and artisan finds to the ground floor of The Forge.',
+  },
 
   // ── Second Floor ──────────────────────────────────────────
   {
