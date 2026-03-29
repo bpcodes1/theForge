@@ -863,6 +863,11 @@ footer {
   :root { --section-h: 3rem; --section-v: 6rem; }
   .dir-intro { grid-template-columns: 1fr; gap: 1.5rem; }
   .info-grid { grid-template-columns: 1fr 1fr; }
+  .ladies-split { grid-template-columns: 1fr; }
+  .ladies-imgs { grid-template-columns: repeat(3, 1fr); grid-template-rows: 360px; min-height: unset; width: 100%; }
+  .ladies-imgs img:first-child { grid-row: span 1; }
+  .ladies-imgs img:last-child { object-position: center 40%; }
+  .ladies-info { padding: 3.5rem 3rem; }
 }
 @media (max-width: 900px) {
   :root { --section-h: 1.8rem; --section-v: 5rem; }
@@ -902,7 +907,7 @@ footer {
   .ladies-split { grid-template-columns: 1fr; }
   .ladies-imgs { grid-template-columns: repeat(3, 1fr); grid-template-rows: 220px; min-height: unset; }
   .ladies-imgs img:first-child { grid-row: span 1; }
-  .ladies-imgs img:last-child { object-position: center 30%; }
+  .ladies-imgs img:last-child { object-position: center 40%; }
   .ladies-info { padding: 3rem 1.5rem; }
   .event-types { grid-template-columns: 1fr; }
   .specs-grid { grid-template-columns: repeat(2,1fr); }
