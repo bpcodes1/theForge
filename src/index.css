@@ -837,6 +837,7 @@ footer {
 .dir-tenant-desc { font-size: .83rem; line-height: 1.75; color: var(--muted); flex: 1; }
 .dir-tenant-link { font-size: .75rem; font-weight: 600; letter-spacing: .06em; color: var(--cherry); text-decoration: none; align-self: flex-start; margin-top: .4rem; }
 .dir-tenant-link:hover { text-decoration: underline; }
+.dir-tenant-coming-soon { font-size: .75rem; font-weight: 600; letter-spacing: .06em; color: var(--muted); align-self: flex-start; margin-top: .4rem; font-style: italic; }
 .dir-empty { padding: 4rem; text-align: center; color: var(--muted); font-size: .9rem; }
 
 /* ─── HAMBURGER + MOBILE OVERLAY ─── */

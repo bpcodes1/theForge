@@ -16,6 +16,7 @@ type Tenant = {
   logoStyle?: React.CSSProperties
   website?: string
   link?: string
+  comingSoon?: boolean
 }
 
 const TENANTS: Tenant[] = [
@@ -24,14 +25,14 @@ const TENANTS: Tenant[] = [
     name: 'A Wonderful World', category: 'Retail', categoryKey: 'retail',
     suite: 'Suite 145',
     logo: 'directory/first_floor/a_wonderful_world.png',
-    website: '#',
+    website: 'https://www.instagram.com/a_wonderful_world_pnw/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Allelu', category: 'Beauty & Salon', categoryKey: 'beauty-salon',
     suite: 'Suite 210',
     logo: 'directory/second_floor/Allelu.png',
-    website: '#',
+    website: 'https://www.allelubeauty.com/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
@@ -39,7 +40,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 160',
     logo: 'directory/first_floor/aloe_logo.JPG',
     logoCircle: true,
-    website: '#',
+    comingSoon: true,
   },
   {
     floor: 'Third Floor', floorKey: 'third-floor',
@@ -54,7 +55,7 @@ const TENANTS: Tenant[] = [
     name: 'Black Label Marketing', category: 'Office & Services', categoryKey: 'office',
     suite: 'Suite 100',
     logo: 'directory/first_floor/black_label_marketing.png',
-    website: '#',
+    website: 'https://blacklabelmarketingonline.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -62,14 +63,14 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 222',
     logo: 'directory/second_floor/BLND.jpeg',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.instagram.com/blnd.colorsuite/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
     name: 'Bonzai', category: 'Food & Drink', categoryKey: 'food-drink',
     suite: 'Suite 120',
     logo: 'directory/first_floor/Bonzai_logo.PNG',
-    website: '#',
+    website: 'https://www.bonzaicoffeeteabar.com/',
     link: '/ground-floor',
   },
   {
@@ -77,7 +78,7 @@ const TENANTS: Tenant[] = [
     name: 'Bridal Glitter & Glam', category: 'Retail', categoryKey: 'retail',
     suite: 'Suite 102',
     logo: 'directory/first_floor/Bridal_Glitter_Glam.svg',
-    website: '#',
+    website: 'https://glitterandglambridal.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -85,21 +86,21 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 204',
     logo: 'directory/second_floor/Bungalow.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.instagram.com/thebungalow.hairstudio',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Capital Mortgage Source', category: 'Financial', categoryKey: 'financial',
     suite: 'Suite 202',
     logo: 'directory/second_floor/Capital_Mortgage_Source.png',
-    website: '#',
+    website: 'https://capitalmortgagesource.com/',
   },
   {
     floor: 'Lower Level', floorKey: 'lower-level',
     name: 'Cellar 54', category: 'Events & Venues', categoryKey: 'events-venues',
     logo: 'directory/lower_floor/The_Forge_Lower_Level_Cellar_54_Logo1.webp',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.cellar54salem.com/',
     link: '/cellar-54',
   },
   {
@@ -108,7 +109,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 230',
     logo: 'directory/second_floor/Clink1.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://clinksalem.com/',
     link: '/womens-collective',
   },
   {
@@ -116,14 +117,14 @@ const TENANTS: Tenant[] = [
     name: 'Diosa Luxury Hair Lounge', category: 'Beauty & Salon', categoryKey: 'beauty-salon',
     suite: 'Suite 260',
     logo: 'directory/second_floor/Diosa_Luxury_Hair_Lounge.png',
-    website: '#',
+    website: 'https://krystalmariehair.glossgenius.com/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
     name: 'Dreamies Creamery', category: 'Food & Drink', categoryKey: 'food-drink',
     suite: 'Suite 130',
     logo: 'directory/first_floor/dreamies_creamy_logo2.png',
-    website: '#',
+    website: 'https://www.dreamiescreamery.com/',
     link: '/ground-floor',
   },
   {
@@ -131,7 +132,7 @@ const TENANTS: Tenant[] = [
     name: 'Full Circle Stretching', category: 'Health & Wellness', categoryKey: 'wellness',
     suite: 'Suite 252',
     logo: 'directory/second_floor/Full_Circle_Stretching.webp',
-    website: '#',
+    website: 'https://www.fcstretching.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -139,7 +140,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 200',
     logo: 'directory/second_floor/Halo_Hair_Studio.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://halosalonsalem.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -147,14 +148,14 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 266',
     logo: 'directory/second_floor/HH_Aesthetics.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.hhaesthetics.net/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Injection Studio', category: 'Health & Wellness', categoryKey: 'wellness',
     suite: 'Suite 208',
     logo: 'directory/second_floor/Injection_Studio.png',
-    website: '#',
+    website: 'https://www.instagram.com/theinjectionstudiobymj/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
@@ -163,14 +164,14 @@ const TENANTS: Tenant[] = [
     logo: 'directory/first_floor/ivory_bull_logo.png',
     logoCircle: true,
     logoStyle: { objectFit: 'contain', background: '#fff' },
-    website: '#',
+    website: 'https://ivorybullandco.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Ivory Hair Co.', category: 'Beauty & Salon', categoryKey: 'beauty-salon',
     suite: 'Suite 240',
     logo: 'directory/second_floor/Ivory_Hair_Co.png',
-    website: '#',
+    website: 'https://www.theivoryhairco.com/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
@@ -178,14 +179,14 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 116',
     logo: 'directory/first_floor/jade_dumpling.jpeg',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.jadedumplingor.com/',
     link: '/ground-floor',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Kimmy Neal Marketing', category: 'Office & Services', categoryKey: 'office',
     suite: 'Suite 258',
-    website: '#',
+    website: 'https://www.kimmyneal.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -193,7 +194,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 216',
     logo: 'directory/second_floor/Luxe_Lash_Studio.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.luxelashstudiosalem.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -201,14 +202,14 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 218',
     logo: 'directory/second_floor/Neon_Republic_Salon.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://neonrepublicsalon.glossgenius.com/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
     name: 'Noira', category: 'Retail', categoryKey: 'retail',
     suite: 'Suite 135',
     logo: 'directory/first_floor/noira_logo.png',
-    website: '#',
+    website: 'https://www.barnoira.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -216,21 +217,21 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 272',
     logo: 'directory/second_floor/PNW_smiles.jpg',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.instagram.com/pnw.smiles/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Radiance by Ray', category: 'Health & Wellness', categoryKey: 'wellness',
     suite: 'Suite 262',
     logo: 'directory/second_floor/Radiance_by_Ray.png',
-    website: '#',
+    website: 'https://raelynjo.glossgenius.com/',
   },
   {
     floor: 'Ground Floor', floorKey: 'ground-floor',
     name: 'Root Cellar Market', category: 'Food & Drink', categoryKey: 'food-drink',
     suite: 'Suite 155',
     logo: 'directory/first_floor/root_cellar.png',
-    website: '#',
+    website: 'https://www.rootcellarmarket.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -238,7 +239,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 264',
     logo: 'directory/second_floor/Satin_Stone.webp',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.satinandstone.net/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -246,7 +247,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 254',
     logo: 'directory/second_floor/Shanti_Soul_Counseling.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://shantisoulcounseling.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -254,7 +255,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 256',
     logo: 'directory/second_floor/Studio_Roux.jpeg',
     logoCircle: true,
-    website: '#',
+    website: 'https://studiorouxsalem.as.me/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -262,7 +263,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 250',
     logo: 'directory/second_floor/The_Esthetic_Gallery.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.instagram.com/theestheticgallery/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -270,7 +271,7 @@ const TENANTS: Tenant[] = [
     suite: 'Suite 270',
     logo: 'directory/second_floor/Hot_Loft.png',
     logoCircle: true,
-    website: '#',
+    website: 'https://www.thehotloft.com/',
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
@@ -366,7 +367,9 @@ export default function DirectoryPage() {
                 <div className="dir-tenant-name">{t.name}</div>
                 <div className="dir-tenant-category">{t.category}</div>
                 <div className="dir-tenant-actions">
-                  {t.website && (
+                  {t.comingSoon ? (
+                    <span className="dir-tenant-coming-soon">Coming Soon</span>
+                  ) : t.website && (
                     <a href={t.website} target="_blank" rel="noopener" className="dir-tenant-link">Visit Website →</a>
                   )}
                 </div>
