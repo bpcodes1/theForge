@@ -968,6 +968,8 @@ footer {
 @media (max-width: 600px) {
   :root { --section-h: 1.4rem; --section-v: 4rem; }
   .hero-content { margin-bottom: 6rem; }
+  .hero-tagline { margin-top: 1.2rem; margin-bottom: 0; }
+  .hero-actions { margin-top: 0.6rem; }
   .hero-address { position: static; text-align: left; margin-top: 1rem; }
   .floors-btn { padding: 0.5rem 1.2rem; font-size: 0.55rem; white-space: nowrap; }
   .section-title { white-space: nowrap; font-size: clamp(1.6rem, 7vw, 2.2rem); }
