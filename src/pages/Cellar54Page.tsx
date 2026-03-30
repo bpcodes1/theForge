@@ -102,11 +102,11 @@ export default function Cellar54Page() {
           </div>
         </div>
         <div className="gallery-grid">
-          <div className="gal-item"><img src={img('cellar54.jpg')} alt="Cellar 54 main room" loading="lazy" /><span className="gal-cap">Main Room</span></div>
-          <div className="gal-item"><img src={img('gallery-3.jpg')} alt="Cellar 54 bar setup" loading="lazy" /><span className="gal-cap">Bar Setup</span></div>
-          <div className="gal-item"><img src={img('gallery-4.jpg')} alt="Cellar 54 table setting" loading="lazy" /><span className="gal-cap">Dinner Setting</span></div>
-          <div className="gal-item"><img src={img('gallery-1.jpg')} alt="Cellar 54 reception" loading="lazy" /><span className="gal-cap">Reception Style</span></div>
-          <div className="gal-item"><img src={img('social-2.jpg')} alt="Cellar 54 event" loading="lazy" /><span className="gal-cap">Event Night</span></div>
+          <div className="gal-item"><img src={img('cellar54/cellar54_1.webp')} alt="Cellar 54 interior" loading="lazy" /><span className="gal-cap">The Space</span></div>
+          <div className="gal-item"><img src={img('cellar54/cellar54_2.webp')} alt="Cellar 54 venue" loading="lazy" /><span className="gal-cap">The Venue</span></div>
+          <div className="gal-item"><img src={img('cellar54/cellar54_tables.webp')} alt="Cellar 54 table setting" loading="lazy" /><span className="gal-cap">Dinner Setting</span></div>
+          <div className="gal-item"><img src={img('cellar54/green_room.jpg')} alt="Cellar 54 green room" loading="lazy" /><span className="gal-cap">Green Room</span></div>
+          <div className="gal-item"><img src={img('cellar54/cellar54_2.webp')} alt="Cellar 54 event space" loading="lazy" /><span className="gal-cap">Event Night</span></div>
         </div>
       </div>
 
