@@ -268,6 +268,13 @@ nav.nav--light { background: var(--void); }
   transition: transform 8s ease;
 }
 .feature-visual:hover img { transform: scale(1.03); }
+.jade-coming-soon { background: var(--void); display: flex; align-items: center; justify-content: center; }
+.jade-coming-soon-inner { display: flex; flex-direction: column; align-items: center; gap: 1.2rem; padding: 3rem; text-align: center; }
+.jade-coming-soon-label { font-size: .55rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.35); }
+.jade-coming-soon-logo { width: 100px; height: 100px; border-radius: 50%; overflow: hidden; border: 1px solid rgba(255,255,255,.12); }
+.jade-coming-soon-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.jade-coming-soon-name { font-family: var(--display); font-size: 2rem; font-weight: 300; color: #fff; letter-spacing: .04em; margin: 0; }
+.jade-coming-soon-tag { display: inline-block; font-size: .58rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--cherry); border: 1px solid var(--cherry); padding: .4rem 1.1rem; }
 .feature-visual-badge {
   position: absolute; top: 2.5rem; left: 2.5rem;
   background: var(--cherry); color: #fff;
@@ -644,6 +651,13 @@ footer {
 .gallery-3 img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s; }
 .gallery-3 .g3-main:hover img, .gallery-3 div:hover img { transform: scale(1.04); }
 .gallery-3 > div { overflow: hidden; }
+.gallery-6 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; overflow: hidden; }
+.gallery-6 > div { position: relative; overflow: hidden; height: 300px; }
+.gallery-6 .g6-banner { grid-column: span 3; height: 380px; }
+.gallery-6 .g6-placeholder { background: var(--deep); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; }
+.gallery-6 .g6-placeholder span { font-size: .55rem; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.3); }
+.gallery-6 img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s; }
+.gallery-6 > div:hover img { transform: scale(1.04); }
 
 /* ══════════════════════════════════════════════
    WOMEN'S COLLECTIVE PAGE
@@ -890,6 +904,8 @@ footer {
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, 200px); }
   .gallery-grid .gal-item:first-child { grid-row: span 1; }
   .gallery-3 { grid-template-columns: 1fr 1fr; height: auto; grid-template-rows: 220px 220px; }
+  .gallery-6 { grid-template-columns: repeat(3, 1fr); }
+  .gallery-6 .g6-banner { grid-column: span 3; }
   .newsletter-strip { flex-direction: column; align-items: flex-start; gap: 2.5rem; padding: 4rem 1.8rem; }
   .nl-form { max-width: 100%; width: 100%; }
   .footer-top { grid-template-columns: 1fr; gap: 2.5rem; }
@@ -1029,5 +1045,8 @@ footer {
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 200px); }
   .specs-grid { grid-template-columns: 1fr; }
   .gallery-3 { grid-template-columns: 1fr; height: auto; grid-template-rows: auto; }
+  .gallery-6 { grid-template-columns: 1fr 1fr; }
+  .gallery-6 > div { height: 200px; }
+  .gallery-6 .g6-banner { grid-column: span 2; height: 220px; }
   .connect-info-grid { grid-template-columns: 1fr; }
 }

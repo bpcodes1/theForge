@@ -29,32 +29,30 @@ export default function GroundFloorPage() {
       </div>
 
       {/* BONZAI */}
-      <div className="feature-split">
+      <div className="feature-split" style={{ minHeight: '100vh' }}>
         <div className="feature-visual">
-          <img src={img('bonzai.jpg')} alt="Bonzai restaurant" loading="lazy" />
+          <img src={img('groundfloor/Bonzai_Entrance.JPG')} alt="Bonzai restaurant" loading="lazy" />
         </div>
         <div className="feature-body feature-body--paper">
           <div className="feature-eyebrow">Ground Floor</div>
           <h2 className="feature-title">Bonzai</h2>
-          <p className="feature-text">Pacific Rim flavors meet Willamette Valley soul. Bonzai is the kind of restaurant that earns regulars in the first week — roll-up garage doors that blur the line between inside and out, a full bar that takes its craft cocktails seriously, and food that makes you wonder why you waited this long.</p>
-          <p className="feature-text">Whether you're in for a long lunch, a proper date night, or just a drink at the bar while you figure out the rest of your evening, Bonzai delivers.</p>
+          <p className="feature-text">Bonzai! is a fusion of... well, us! Founded by two half-Japanese coffee shop professionals, our space is a reflection of who we are - half American, half Japanese, and all about bringing those worlds together.</p>
+          <p className="feature-text">We're one part Pacific Northwest coffeehouse, one part apanese teabar. That means you'll find the classics - lattes, cold brew, and coffeehouse vibes - right alongside flavorful matcha, eclectic boba drinks, rice bowls, and even some Japanese lagers & seltzers.</p>
+          <p className="feature-text">Bonzai! is where traditional coffee vibes meet Japanese tradition and culture. Half coffee shop, half matcha & boba spot. All the flavor. All the fusion. All the Bonzai!</p>
           <div className="feature-meta">
             <div className="feature-meta-item"><label>Cuisine</label><span>Pacific Rim</span></div>
             <div className="feature-meta-item"><label>Hours</label><span>Tue – Sun, 11am – 10pm</span></div>
             <div className="feature-meta-item"><label>Bar</label><span>Full service</span></div>
           </div>
           <div className="feature-actions">
-            <a href="mailto:inquiries@forgesalem.com" className="btn btn--cherry" style={{ background: 'var(--cherry)', color: '#fff' }}>Reserve a Table</a>
+            <a href="https://bonzaicoffeeteabar.com" target="_blank" rel="noopener noreferrer" className="btn btn--cherry" style={{ background: 'var(--cherry)', color: '#fff' }}>Visit Website</a>
             <Link to="/#events" className="btn">See Upcoming Events</Link>
           </div>
         </div>
       </div>
 
       {/* JADE DUMPLINGS */}
-      <div className="feature-split feature-split--rev">
-        <div className="feature-visual">
-          <img src={img('jade-dumplings.jpg')} alt="Jade Dumplings" loading="lazy" />
-        </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '3fr 1fr', background: 'var(--cream)' }}>
         <div className="feature-body feature-body--cream">
           <div className="feature-eyebrow">Ground Floor</div>
           <h2 className="feature-title">Jade Dumplings</h2>
@@ -66,23 +64,30 @@ export default function GroundFloorPage() {
             <div className="feature-meta-item"><label>Hours</label><span>Mon – Sun, 11am – 9pm</span></div>
           </div>
           <div className="feature-actions">
-            <a href="mailto:inquiries@forgesalem.com" className="btn btn--cherry" style={{ background: 'var(--cherry)', color: '#fff' }}>Reserve a Table</a>
+            <span className="btn" style={{ opacity: .5, cursor: 'default', pointerEvents: 'none' }}>Coming Soon</span>
           </div>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '6rem' }}>
+          <img src={img('directory/first_floor/jade_dumpling.jpeg')} alt="Jade Dumplings logo" style={{ width: '100%', maxWidth: '160px', height: '160px', objectFit: 'cover', borderRadius: '50%' }} />
         </div>
       </div>
 
       {/* GALLERY */}
-      <div className="section section--paper" style={{ paddingTop: '4rem' }}>
+      <div className="section section--paper" style={{ paddingTop: '4rem', overflow: 'hidden' }}>
         <div className="section-header">
           <div>
             <span className="section-label">Ground Floor</span>
             <h2 className="section-title">The Space</h2>
           </div>
         </div>
-        <div className="gallery-3">
-          <div className="g3-main"><img src={img('ground-floor.jpg')} alt="Ground floor dining area" loading="lazy" /></div>
-          <div><img src={img('gallery-2.jpg')} alt="Bonzai interior" loading="lazy" /></div>
-          <div><img src={img('gallery-3.jpg')} alt="Jade Dumplings" loading="lazy" /></div>
+        <div className="gallery-6">
+          <div className="g6-banner"><img src={img('groundfloor/Bonzai_Overview.JPG')} alt="Bonzai overview" loading="lazy" /></div>
+          <div><img src={img('groundfloor/Ivory_Bull.JPG')} alt="Ivory Bull" loading="lazy" /></div>
+          <div className="g6-placeholder">
+            <img src={img('hero.jpg')} alt="The Forge" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+          </div>
+          <div><img src={img('groundfloor/Dreamies_Creamery.jpg')} alt="Dreamies Creamery" loading="lazy" /></div>
+          <div className="g6-banner"><img src={img('ground-floor.jpg')} alt="Ground floor dining area" loading="lazy" /></div>
         </div>
       </div>
 

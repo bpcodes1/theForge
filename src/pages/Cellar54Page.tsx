@@ -63,10 +63,10 @@ export default function Cellar54Page() {
 
       {/* SPECS */}
       <div className="specs-grid">
-        <div className="spec-card"><div className="spec-num">80</div><div className="spec-label">Seated Capacity</div></div>
-        <div className="spec-card"><div className="spec-num">120</div><div className="spec-label">Reception Style</div></div>
+        <div className="spec-card"><div className="spec-num">180</div><div className="spec-label">Seated Capacity</div></div>
+        <div className="spec-card"><div className="spec-num">200</div><div className="spec-label">Reception Style</div></div>
         <div className="spec-card"><div className="spec-num">Full</div><div className="spec-label">Bar Service</div></div>
-        <div className="spec-card"><div className="spec-num">AV</div><div className="spec-label">Built-in A/V</div></div>
+        <div className="spec-card"><div className="spec-num">The A</div><div className="spec-label">Sound System</div></div>
       </div>
 
       {/* EVENT TYPES */}

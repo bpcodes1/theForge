@@ -186,12 +186,12 @@ export default function HomePage() {
         </div>
         <div className="social-grid">
           {[
-            { src: img('social-1.jpg'), alt: 'Vendor market at The Forge', cap: 'Our makers bring it every time. Market days hit different.', likes: '412' },
-            { src: img('gallery-1.jpg'), alt: "Women's Collective boutique", cap: "Second floor is doing something they can't quite explain.", likes: '356' },
-            { src: img('ladies-room-3.jpg'), alt: 'Ladies Room', cap: 'People come for the vibe. They stay for the bathroom.', likes: '891' },
-            { src: img('clink.jpg'), alt: 'Clink! bar', cap: 'Cherry blossoms and champagne on the second floor.', likes: '638' },
-            { src: img('social-2.jpg'), alt: 'The Forge events', cap: 'The wins here look good in frames.', likes: '284' },
-            { src: img('gallery-6.jpg'), alt: 'Ground floor dining', cap: 'Dining that makes a night into a memory.', likes: '503' },
+            { src: img('homepage/vendor_market.jpeg'), alt: 'Vendor market at The Forge', cap: 'Our makers bring it every time. Market days hit different.', likes: '412' },
+            { src: img('homepage/womens_collective.jpeg'), alt: "Women's Collective", cap: "Second floor is doing something they can't quite explain.", likes: '356' },
+            { src: img('homepage/ladies_room.jpg'), alt: 'Ladies Room', cap: 'People come for the vibe. They stay for the bathroom.', likes: '891' },
+            { src: img('homepage/clink.jpg'), alt: 'Clink! bar', cap: 'Cherry blossoms and champagne on the second floor.', likes: '638' },
+            { src: img('homepage/forge_events.jpg'), alt: 'The Forge events', cap: 'The wins here look good in frames.', likes: '284' },
+            { src: img('homepage/ground_dining.JPEG'), alt: 'Ground floor dining', cap: 'Dining that makes a night into a memory.', likes: '503' },
           ].map((p, i) => (
             <div className="social-post" key={i}>
               <img src={p.src} alt={p.alt} loading="lazy" />
