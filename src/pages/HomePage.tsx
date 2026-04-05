@@ -7,7 +7,10 @@ import { img } from '../utils/img'
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December']
 
 const allEvents = [
+  { date: '2026-04-01', title: 'Clink! Lunch Launch', venue: 'Clink!', category: 'dining', desc: 'Clink! officially launches their lunch service. Come celebrate and enjoy the new menu.' },
+  { date: '2026-04-05', title: 'Ivory Bull Giveaway — Fashion Week', venue: 'Ivory Bull', category: 'events', desc: 'Ivory Bull kicks off Fashion Week with an exclusive giveaway running April 5th through April 12th.' },
   { date: '2026-04-09', title: 'Forge Investor Forum', venue: 'The Forge', category: 'events', desc: 'Mike Nuss hosts the Forge Investor Forum. Details to follow.' },
+  { date: '2026-04-11', title: 'Bungalow Grand Opening', venue: 'Bungalow', category: 'events', desc: 'Celebrate the grand opening of Bungalow at The Forge. Join us for an evening of celebration.' },
   { date: '2026-04-25', title: 'Kentucky Derby Party', venue: 'The Forge', category: 'events', desc: 'Sumpter Elementary Kentucky Derby fundraiser event at The Forge.' },
   { date: '2026-05-15', title: 'Grand Opening', venue: 'The Forge', category: 'events', desc: 'The official Grand Opening of The Forge. Join us for two days of celebration.' },
   { date: '2026-05-16', title: 'Grand Opening — Day 2', venue: 'The Forge', category: 'events', desc: 'Day two of The Forge Grand Opening celebration.' },

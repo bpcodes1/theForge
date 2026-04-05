@@ -25,7 +25,7 @@ const FAQ_SECTIONS: FaqSection[] = [
     id: 'restrooms', icon: '✦', title: 'Restrooms',
     items: [
       { q: 'Where are the restrooms?', a: <>Public restrooms are located on the <strong>ground floor</strong> near the main entrance, and on the <strong>second floor</strong> in the Women's Collective. The second-floor ladies' room is — we're not exaggerating — the most talked-about restroom in Salem. It's worth the elevator ride even if you don't need to go.</> },
-      { q: 'Do the restrooms require a code?', a: <>The second-floor Women's Collective restroom is <strong>code-protected for guests of the floor</strong>. The current access code is available at:<br /><br />• The second-floor front desk or reception area<br />• Any Women's Collective tenant (just ask!)<br />• Clink! bar staff<br /><br />The code changes periodically. If you're visiting for a specific tenant or event, they'll provide the code when you check in. Ground-floor restrooms are open access with no code required.</> },
+      { q: 'Do the restrooms require a code?', a: <>Both the ground-floor and second-floor restrooms are <strong>code-protected</strong>. To get the access code, stop by the <strong>front desk</strong> or ask any tenant — they'll be happy to help. Codes change periodically, so always grab the current one on arrival.</> },
       { q: "I've heard a lot about the second-floor ladies' room. Is it really that good?", a: "Yes. Crystal chandeliers. Pink marble vessel sinks. Brass fixtures. Smart mirrors. A velvet lounge area. A neon sign. Framed art. It was designed to function as a \"public living room\" where you can genuinely spend time. People visit The Forge specifically to see it. We're not embarrassed by this." },
       { q: 'Are restrooms accessible?', a: <>Yes. All restroom facilities at The Forge are ADA-accessible. The elevator provides access to all floors. If you need specific assistance, please <a href="mailto:inquiries@forgesalem.com">let us know</a>.</> },
     ]
@@ -46,7 +46,7 @@ const FAQ_SECTIONS: FaqSection[] = [
           </table>
         )
       },
-      { q: 'Are you open on holidays?', a: <>Most tenants have modified hours on major holidays. We recommend calling ahead or checking the specific tenant's social media if you're planning a holiday visit. Cellar 54 is very popular for holiday events — book early at <a href="https://cellar54salem.com" target="_blank" rel="noopener">cellar54salem.com</a> or call <a href="tel:5033023237">503-302-3237</a>.</> },
+      { q: 'Are you open on holidays?', a: <>Most tenants have modified hours on major holidays. We recommend calling ahead or checking the specific tenant's social media if you're planning a holiday visit.</> },
     ]
   },
   {

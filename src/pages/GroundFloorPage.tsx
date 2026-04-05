@@ -72,8 +72,23 @@ export default function GroundFloorPage() {
         </div>
       </div>
 
+      {/* NOIRA */}
+      <div className="feature-split feature-split--rev" style={{ height: '320px' }}>
+        <div className="feature-visual" style={{ height: '100%' }}>
+          <img src={img('groundfloor/Noira1.jpg')} alt="Noira" loading="lazy" />
+        </div>
+        <div className="feature-body feature-body--paper">
+          <div className="feature-eyebrow">Ground Floor</div>
+          <h2 className="feature-title">Noira</h2>
+          <p className="feature-text">Coming soon to The Forge. Stay tuned for details.</p>
+          <div className="feature-actions">
+            <span className="btn" style={{ opacity: .5, cursor: 'default', pointerEvents: 'none' }}>Coming Soon</span>
+          </div>
+        </div>
+      </div>
+
       {/* GALLERY */}
-      <div className="section section--paper" style={{ paddingTop: '4rem', overflow: 'hidden' }}>
+      <div className="section section--cream" style={{ paddingTop: '4rem', overflow: 'hidden' }}>
         <div className="section-header">
           <div>
             <span className="section-label">Ground Floor</span>

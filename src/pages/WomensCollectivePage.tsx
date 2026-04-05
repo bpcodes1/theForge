@@ -49,17 +49,24 @@ export default function WomensCollectivePage() {
       {/* CLINK! */}
       <div className="clink-split" id="clink">
         <div className="clink-img">
-          <img src={img('clink_bar.jpg')} alt="Clink! champagne and martini bar" loading="lazy" />
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', height: '100%', gap: '2px' }}>
+            <img src={img('clink_bar.jpg')} alt="Clink! bar" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('womens_collective/Clink3.jpg')} alt="Clink! interior" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('womens_collective/Clink2.jpg')} alt="Clink! dining" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('womens_collective/Clink1.jpg')} alt="Clink! ambiance" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+          </div>
+          <img src={img('directory/second_floor/Clink1.png')} alt="Clink! logo" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100px', height: '100px', objectFit: 'cover', borderRadius: '50%', zIndex: 2 }} />
           <span className="clink-badge">Now Open</span>
         </div>
         <div className="clink-info">
           <div className="clink-eyebrow">Featured Tenant</div>
           <h2 className="clink-title">Salem, Meet<br />Clink!</h2>
-          <p className="clink-body">A champagne and martini bar tucked inside the Women's Collective — because a floor with cherry blossom trees and velvet booths clearly wasn't going to let a French bistro aesthetic go to waste.</p>
-          <p className="clink-body">Clink! is women-centric by design. A place to celebrate each other, catch up over bubbles, and linger longer than you planned. Come for the champagne. Stay because you don't want it to end.</p>
+          <p className="clink-body">Clink! is a French-inspired restaurant in the heart of Salem, offering seasonal, locally inspired cuisine, thoughtfully crafted cocktails, and warm, elevated hospitality.</p>
+          <p className="clink-body">Designed as a welcoming gathering place, Clink! offers lunch, brunch, and dinner with an experience that feels both refined and approachable.</p>
           <div className="clink-details">
-            <div className="clink-detail"><label>Vibe</label><span>French-inspired, velvet, cherry blossoms</span></div>
-            <div className="clink-detail"><label>Specialty</label><span>Champagne flights, craft martinis</span></div>
+            <div className="clink-detail"><label>Wed – Fri</label><span>Lunch 11am – 2:30pm · Dinner 4pm – 9pm</span></div>
+            <div className="clink-detail"><label>Saturday</label><span>Brunch 9am – 2:30pm · Dinner 4pm – 9pm</span></div>
+            <div className="clink-detail"><label>Sunday</label><span>Brunch 9am – 2:30pm · Dinner 4pm – 7pm</span></div>
           </div>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
             <a href="https://www.instagram.com/clinksalem/" target="_blank" rel="noopener" className="btn btn--cherry" style={{ background: 'var(--cherry)', color: '#fff' }}>Follow @clinksalem</a>
@@ -79,19 +86,34 @@ export default function WomensCollectivePage() {
             Independent practitioners. Curated community. Twenty-four reasons to make the second floor part of your routine.
           </p>
         </div>
-        <div className="tenant-grid">
+        <div className="tenant-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))' }}>
           {[
-            { name: 'Clink!', type: 'Champagne & Martini Bar', desc: 'Cherry blossom tree. Velvet pink booths. The most charming bar Salem has ever seen, and it\'s on the second floor of a building.' },
-            { name: 'Luxe Lash Studio', type: 'Lash Extensions & Beauty', desc: 'Volume, hybrid, classic. The suite with a waiting list that earns every name on it.' },
-            { name: 'Satin & Stone', type: 'Massage & Body Wellness', desc: 'Deep tissue, hot stone, and custom bodywork designed to make your to-do list feel like someone else\'s problem.' },
-            { name: 'The Hot Loft', type: 'Infrared Yoga & Pilates', desc: 'Reformer pilates, infrared heat, and a 6am community that actually looks happy about it. Respect.' },
-            { name: 'Suite 201', type: 'Available', desc: <span>Private suite available for lease. Join the Collective. <a href="mailto:inquiries@forgesalem.com" style={{ color: 'var(--cherry)' }}>Inquire →</a></span> },
-            { name: 'Suite 208', type: 'Available', desc: <span>Private suite available for lease. Join the Collective. <a href="mailto:inquiries@forgesalem.com" style={{ color: 'var(--cherry)' }}>Inquire →</a></span> },
+            { name: 'Halo Hair Studio',        type: 'Beauty & Salon',     suite: 'Suite 200' },
+            { name: 'Capital Mortgage Source', type: 'Financial',           suite: 'Suite 202' },
+            { name: 'Bungalow',                type: 'Health & Wellness',   suite: 'Suite 204' },
+            { name: 'Injection Studio',        type: 'Health & Wellness',   suite: 'Suite 208' },
+            { name: 'Allelu',                  type: 'Beauty & Salon',     suite: 'Suite 210' },
+            { name: 'Luxe Lash Studio',        type: 'Beauty & Salon',     suite: 'Suite 216' },
+            { name: 'Neon Republic Salon',     type: 'Beauty & Salon',     suite: 'Suite 218' },
+            { name: 'BLND',                    type: 'Beauty & Salon',     suite: 'Suite 222' },
+            { name: 'Clink!',                  type: 'Events & Venues',    suite: 'Suite 230' },
+            { name: 'Ivory Hair Co.',          type: 'Beauty & Salon',     suite: 'Suite 240' },
+            { name: 'The Esthetic Gallery',    type: 'Health & Wellness',   suite: 'Suite 250' },
+            { name: 'Full Circle Stretching',  type: 'Health & Wellness',   suite: 'Suite 252' },
+            { name: 'Shanti Soul Counseling',  type: 'Health & Wellness',   suite: 'Suite 254' },
+            { name: 'Studio Roux',             type: 'Beauty & Salon',     suite: 'Suite 256' },
+            { name: 'Kimmy Neal Marketing',    type: 'Office & Services',  suite: 'Suite 258' },
+            { name: 'Diosa Luxury Hair Lounge',type: 'Beauty & Salon',     suite: 'Suite 260' },
+            { name: 'Radiance by Ray',         type: 'Health & Wellness',   suite: 'Suite 262' },
+            { name: 'Satin & Stone',           type: 'Health & Wellness',   suite: 'Suite 264' },
+            { name: 'HH Aesthetics',           type: 'Health & Wellness',   suite: 'Suite 266' },
+            { name: 'The Hot Loft',            type: 'Health & Wellness',   suite: 'Suite 270' },
+            { name: 'PNW Smiles',              type: 'Health & Wellness',   suite: 'Suite 272' },
           ].map((t, i) => (
-            <div className="tenant-card section--paper" key={i}>
-              <div className="tenant-card-name">{t.name}</div>
+            <div className="tenant-card section--paper" key={i} style={{ padding: '1.4rem 1.4rem' }}>
+              <div className="tenant-card-name" style={{ fontSize: '1rem' }}>{t.name}</div>
               <div className="tenant-card-type">{t.type}</div>
-              <p className="tenant-card-desc">{t.desc}</p>
+              <div className="tenant-card-desc">{t.suite}</div>
             </div>
           ))}
         </div>

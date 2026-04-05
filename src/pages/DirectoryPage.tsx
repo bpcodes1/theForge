@@ -274,6 +274,13 @@ const TENANTS: Tenant[] = [
     website: 'https://www.thehotloft.com/',
   },
   {
+    floor: 'The Forge', floorKey: 'the-forge',
+    name: 'The Magnetic Club', category: 'Community', categoryKey: 'community',
+    logo: 'directory/The Magnetic Club Logo.png',
+    logoCircle: true,
+    comingSoon: true,
+  },
+  {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: "Women's Collective", category: 'Community', categoryKey: 'community',
     link: '/womens-collective',

@@ -44,7 +44,7 @@ export default function LeasingPage() {
       {/* INTRO SPLIT */}
       <div className="lease-intro">
         <div className="lease-intro-img">
-          <img src={img('gallery-1.jpg')} alt="The Forge interior" loading="lazy" />
+          <img src={img('FAQ/ForgeSpace.jpg')} alt="The Forge interior" loading="lazy" />
         </div>
         <div className="lease-intro-body">
           <div className="lease-eyebrow">Leasing at The Forge</div>
@@ -84,7 +84,7 @@ export default function LeasingPage() {
       {/* INQUIRY FORM */}
       <div className="inquiry-wrap" id="inquiry">
         <div className="inquiry-img">
-          <img src={img('gallery-4.jpg')} alt="The Forge space" loading="lazy" />
+          <img src={img('FAQ/ForgeSpace2.jpg')} alt="The Forge space" loading="lazy" />
         </div>
         <div className="inquiry-form-col">
           <h2>Express Interest</h2>
