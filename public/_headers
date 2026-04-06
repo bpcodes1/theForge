@@ -1,0 +1,17 @@
+# Cache images aggressively — 1 year
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache fonts — 1 year
+/assets/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+# HTML — no cache (always fetch fresh so updates deploy instantly)
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# JS/CSS chunks — 1 year (Vite fingerprints filenames so safe to cache forever)
+/assets/*.js
+  Cache-Control: public, max-age=31536000, immutable
+/assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
