@@ -102,11 +102,12 @@ export default function Cellar54Page() {
           </div>
         </div>
         <div className="gallery-grid">
-          <div className="gal-item"><img src={img('cellar54/cellar54_1.webp')} alt="Cellar 54 interior" loading="lazy" /><span className="gal-cap">The Space</span></div>
+          <div className="gal-item"><img src={img('cellar54/cellar54_3.webp')} alt="Cellar 54 interior" loading="lazy" /><span className="gal-cap">The Space</span></div>
           <div className="gal-item"><img src={img('cellar54/cellar54_2.webp')} alt="Cellar 54 venue" loading="lazy" /><span className="gal-cap">The Venue</span></div>
           <div className="gal-item"><img src={img('cellar54/cellar54_tables.webp')} alt="Cellar 54 table setting" loading="lazy" /><span className="gal-cap">Dinner Setting</span></div>
           <div className="gal-item"><img src={img('cellar54/green_room.webp')} alt="Cellar 54 green room" loading="lazy" /><span className="gal-cap">Green Room</span></div>
           <div className="gal-item"><img src={img('cellar54/cellar54_2.webp')} alt="Cellar 54 event space" loading="lazy" /><span className="gal-cap">Event Night</span></div>
+          <div className="gal-item"><img src={img('cellar54/cellar54_4.webp')} alt="Cellar 54" loading="lazy" /><span className="gal-cap">The Experience</span></div>
         </div>
       </div>
 
