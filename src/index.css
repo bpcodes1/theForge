@@ -627,6 +627,7 @@ footer {
 .social-likes { color: rgba(255,255,255,0.6); font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; }
 .social-foot { margin-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; }
 .social-tag { font-size: 0.7rem; font-weight: 300; color: rgba(255,255,255,0.45); }
+behold-widget { --behold-num-cols: 6; --behold-gap: 3px; display: block; width: 100%; }
 
 /* ══════════════════════════════════════════════
    ANTHEM PAGE
@@ -895,6 +896,7 @@ footer {
   .events-header { grid-template-columns: 1fr; }
   .events-list { grid-template-columns: 1fr 1fr; }
   .social-grid { grid-template-columns: repeat(3, 1fr); }
+  behold-widget { --behold-num-cols: 3; }
   .social-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
   .feature-split { grid-template-columns: 1fr; }
   .feature-visual { min-height: 360px; }
@@ -990,7 +992,7 @@ footer {
   .events-list { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
-  .ladies-imgs { grid-template-columns: 1fr 1fr; grid-template-rows: 260px 190px 190px; }
+  .ladies-imgs { grid-template-columns: 1fr 1fr; grid-template-rows: 240px 200px 200px; }
   .ladies-imgs img:first-child { grid-column: span 2; grid-row: span 1; }
   :root { --section-h: 1.4rem; --section-v: 4rem; }
   .hero-content { margin-bottom: 6rem; }
@@ -1040,6 +1042,7 @@ footer {
   .floors-grid { grid-template-rows: repeat(4, 200px); }
   .events-list { grid-template-columns: 1fr; }
   .social-grid { grid-template-columns: repeat(2, 1fr); }
+  behold-widget { --behold-num-cols: 2; }
   .page-title { font-size: 3.5rem; }
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(6, 200px); }
   .specs-grid { grid-template-columns: 1fr; }

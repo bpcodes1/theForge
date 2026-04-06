@@ -1,4 +1,12 @@
 import { useState, useEffect, FormEvent } from 'react'
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'behold-widget': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & { 'feed-id': string }
+    }
+  }
+}
 import { Link, useNavigate } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -20,6 +28,14 @@ export default function HomePage() {
   const navigate = useNavigate()
 
   useEffect(() => { document.title = "The Forge — Salem's Lifestyle Collective" }, [])
+
+  useEffect(() => {
+    if (document.querySelector('script[src="https://w.behold.so/widget.js"]')) return
+    const s = document.createElement('script')
+    s.type = 'module'
+    s.src = 'https://w.behold.so/widget.js'
+    document.head.append(s)
+  }, [])
 
   useEffect(() => {
     const el = document.getElementById('connect')
@@ -187,24 +203,7 @@ export default function HomePage() {
             Follow on Instagram
           </a>
         </div>
-        <div className="social-grid">
-          {[
-            { src: img('homepage/vendor_market.webp'), alt: 'Vendor market at The Forge', cap: 'Our makers bring it every time. Market days hit different.', likes: '412' },
-            { src: img('homepage/womens_collective.webp'), alt: "Women's Collective", cap: "Second floor is doing something they can't quite explain.", likes: '356' },
-            { src: img('homepage/ladies_room.webp'), alt: 'Ladies Room', cap: 'People come for the vibe. They stay for the bathroom.', likes: '891' },
-            { src: img('homepage/clink.webp'), alt: 'Clink! bar', cap: 'Cherry blossoms and champagne on the second floor.', likes: '638' },
-            { src: img('homepage/forge_events.webp'), alt: 'The Forge events', cap: 'The wins here look good in frames.', likes: '284' },
-            { src: img('homepage/ground_dining.webp'), alt: 'Ground floor dining', cap: 'Dining that makes a night into a memory.', likes: '503' },
-          ].map((p, i) => (
-            <div className="social-post" key={i}>
-              <img src={p.src} alt={p.alt} loading="lazy" />
-              <div className="social-overlay">
-                <span className="social-cap">{p.cap}</span>
-                <span className="social-likes">❤ {p.likes}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        <behold-widget feed-id="3FmCp50v68XOSprBY5YE" />
         <div className="social-foot">
           <span className="social-tag">#TheForge &nbsp;#ForgeSalem &nbsp;#Clink</span>
           <a href="https://www.instagram.com/theforgesalem/" target="_blank" rel="noopener" className="btn btn--ghost" style={{ fontSize: '0.58rem', padding: '0.52rem 1rem' }}>
