@@ -1,4 +1,5 @@
 import { useState, FormEvent } from 'react'
+import { isValidEmail } from '../utils/sanitize'
 
 interface Props {
   headline?: string
@@ -14,6 +15,7 @@ export default function NewsletterStrip({
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
+    if (!isValidEmail(email)) return
     setSubmitted(true)
     setEmail('')
   }
@@ -32,6 +34,8 @@ export default function NewsletterStrip({
           required
           value={email}
           onChange={e => setEmail(e.target.value)}
+          maxLength={254}
+          autoComplete="email"
           disabled={submitted}
         />
         <button

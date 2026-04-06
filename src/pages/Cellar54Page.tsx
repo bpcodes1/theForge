@@ -1,4 +1,5 @@
 import { useEffect, useState, FormEvent } from 'react'
+import { sanitize, isValidEmail, isValidPhone } from '../utils/sanitize'
 import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -13,13 +14,17 @@ export default function Cellar54Page() {
     date: '', phone: '', message: ''
   })
 
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault()
-    setSubmitted(true)
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
+    const { name, value } = e.target
+    const sanitized = e.target.tagName === 'SELECT' ? value : sanitize(value)
+    setForm(prev => ({ ...prev, [name]: sanitized }))
   }
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
-    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault()
+    if (!isValidEmail(form.email)) return
+    if (!isValidPhone(form.phone)) return
+    setSubmitted(true)
   }
 
   return (
@@ -126,8 +131,8 @@ export default function Cellar54Page() {
           ) : (
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <div className="form-field"><label>Your Name</label><input type="text" name="name" placeholder="Jane Smith" required value={form.name} onChange={handleChange} /></div>
-                <div className="form-field"><label>Email</label><input type="email" name="email" placeholder="jane@email.com" required value={form.email} onChange={handleChange} /></div>
+                <div className="form-field"><label>Your Name</label><input type="text" name="name" placeholder="Jane Smith" required maxLength={100} autoComplete="name" value={form.name} onChange={handleChange} /></div>
+                <div className="form-field"><label>Email</label><input type="email" name="email" placeholder="jane@email.com" required maxLength={254} autoComplete="email" value={form.email} onChange={handleChange} /></div>
               </div>
               <div className="form-row">
                 <div className="form-field">
@@ -141,15 +146,15 @@ export default function Cellar54Page() {
                     <option>Other</option>
                   </select>
                 </div>
-                <div className="form-field"><label>Estimated Guest Count</label><input type="text" name="guestCount" placeholder="e.g. 40–60 guests" value={form.guestCount} onChange={handleChange} /></div>
+                <div className="form-field"><label>Estimated Guest Count</label><input type="text" name="guestCount" placeholder="e.g. 40–60 guests" maxLength={20} value={form.guestCount} onChange={handleChange} /></div>
               </div>
               <div className="form-row">
                 <div className="form-field"><label>Preferred Date</label><input type="date" name="date" value={form.date} onChange={handleChange} /></div>
-                <div className="form-field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="(503) 000-0000" value={form.phone} onChange={handleChange} /></div>
+                <div className="form-field"><label>Phone (optional)</label><input type="tel" name="phone" placeholder="(503) 000-0000" maxLength={20} pattern="[\d\s\-().+]{7,20}" autoComplete="tel" value={form.phone} onChange={handleChange} /></div>
               </div>
               <div className="form-field" style={{ marginBottom: '1.5rem' }}>
                 <label>Tell Us More</label>
-                <textarea name="message" placeholder="Any details about your event, special requests, or questions for the team…" value={form.message} onChange={handleChange} />
+                <textarea name="message" placeholder="Any details about your event, special requests, or questions for the team…" maxLength={1000} value={form.message} onChange={handleChange} />
               </div>
               <button type="submit" className="btn btn--filled" style={{ width: '100%', textAlign: 'center' }}>
                 Send Inquiry

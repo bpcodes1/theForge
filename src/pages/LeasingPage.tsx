@@ -1,4 +1,5 @@
 import { useEffect, useState, FormEvent } from 'react'
+import { sanitize, isValidEmail, isValidPhone } from '../utils/sanitize'
 import { Link } from 'react-router-dom'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -14,11 +15,15 @@ export default function LeasingPage() {
   })
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
-    setForm(prev => ({ ...prev, [e.target.name]: e.target.value }))
+    const { name, value } = e.target
+    const sanitized = e.target.tagName === 'SELECT' ? value : sanitize(value)
+    setForm(prev => ({ ...prev, [name]: sanitized }))
   }
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
+    if (!isValidEmail(form.email)) return
+    if (!isValidPhone(form.phone)) return
     setSubmitted(true)
   }
 
@@ -97,15 +102,15 @@ export default function LeasingPage() {
           ) : (
             <form onSubmit={handleSubmit}>
               <div className="form-row">
-                <div className="form-field"><label>First Name</label><input type="text" name="first" required placeholder="Jane" value={form.first} onChange={handleChange} /></div>
-                <div className="form-field"><label>Last Name</label><input type="text" name="last" required placeholder="Smith" value={form.last} onChange={handleChange} /></div>
+                <div className="form-field"><label>First Name</label><input type="text" name="first" required placeholder="Jane" maxLength={50} autoComplete="given-name" value={form.first} onChange={handleChange} /></div>
+                <div className="form-field"><label>Last Name</label><input type="text" name="last" required placeholder="Smith" maxLength={50} autoComplete="family-name" value={form.last} onChange={handleChange} /></div>
               </div>
               <div className="form-row">
-                <div className="form-field"><label>Email</label><input type="email" name="email" required placeholder="jane@yourbusiness.com" value={form.email} onChange={handleChange} /></div>
-                <div className="form-field"><label>Phone</label><input type="tel" name="phone" placeholder="(503) 555-0100" value={form.phone} onChange={handleChange} /></div>
+                <div className="form-field"><label>Email</label><input type="email" name="email" required placeholder="jane@yourbusiness.com" maxLength={254} autoComplete="email" value={form.email} onChange={handleChange} /></div>
+                <div className="form-field"><label>Phone</label><input type="tel" name="phone" placeholder="(503) 555-0100" maxLength={20} pattern="[\d\s\-().+]{7,20}" autoComplete="tel" value={form.phone} onChange={handleChange} /></div>
               </div>
               <div className="form-row">
-                <div className="form-field"><label>Business Name</label><input type="text" name="business" placeholder="Your Business LLC" value={form.business} onChange={handleChange} /></div>
+                <div className="form-field"><label>Business Name</label><input type="text" name="business" placeholder="Your Business LLC" maxLength={100} autoComplete="organization" value={form.business} onChange={handleChange} /></div>
                 <div className="form-field">
                   <label>Business Type</label>
                   <select name="type" value={form.type} onChange={handleChange}>
@@ -148,7 +153,7 @@ export default function LeasingPage() {
               <div className="form-row full">
                 <div className="form-field">
                   <label>Tell Us About Your Business</label>
-                  <textarea name="message" placeholder="What you do, what you're looking for in a space, any questions you have…" value={form.message} onChange={handleChange} />
+                  <textarea name="message" placeholder="What you do, what you're looking for in a space, any questions you have…" maxLength={1000} value={form.message} onChange={handleChange} />
                 </div>
               </div>
               <div className="form-submit">
