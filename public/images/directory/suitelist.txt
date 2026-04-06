@@ -32,3 +32,58 @@ Capital Mortgage Source, https://capitalmortgagesource.com/
 Halo Hair Studio, https://halosalonsalem.com/
 
 Cellar 54, https://www.cellar54salem.com/
+
+Notes From Nat
+
+Homepage (In Progress, Need Instagram Login)
+* Change Dining & Heart, Update Image, Instagram Posts
+
+Ground Floor (Done)
+* Add Noira Section
+
+Women's Collective (Done)
+* Include All Suites in 200 level, Add More Ladies Room Image
+
+Anthem (Need from Client)
+* Update Images
+
+Cellar 54 (Done)
+* Update Cowboy Hat Image, Update Images
+
+FAQ Restrooms (Done)
+* Front Desk is where you get the access code, ask any tenant for a code. Codes Change Periodically, both floors require code. 
+
+FAQ Are you Open on Holidays? (Done)
+* Remove cellar54 sentence.
+
+Directory (Done)
+* Add missing tenants
+
+Submission Forms (In Progress)
+* Ensure Submission Forms are Sent to Appropriate Emails
+
+
+
+well this is what happens, ill go to for example ground_floor page, but then after i refresh, it keeps adding /and/and,       
+  for exmaple this is how the url looks after i refresh: https://forgesalem.com/ground-floor/?/&/~and~/~and~/~and~/~and~/~a    
+  nd~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/~and~/. Will          the change you just made fix it, if not, find the issue and fix it                                                            
+                                                                                                                                ● The ~and~ pattern is Cloudflare-specific — it's how Cloudflare encodes & characters when it gets caught in a redirect loop.     The basename removal will help, but the real issue is likely a conflict between your _redirects file and a Cloudflare redirect   rule in your dashboard.                                                                                                      
+  
+  Here's what's happening:                                                                                                        1. You refresh /ground-floor                                                                                                  
+  2. Cloudflare's dashboard redirect rule fires and redirects
+  3. The _redirects file also tries to handle it
+  4. They loop — each loop appends another ~and~ to the URL
+
+  To fix it:
+
+  1. Log into Cloudflare dashboard → your domain → Rules
+  2. Check Page Rules, Redirect Rules, and Transform Rules — delete any that forward/redirect traffic for forgesalem.com/*      
+  3. The _redirects file I already added to the project should handle all the routing on its own — you don't need anything extra
+   in the dashboard
+
+  The only Cloudflare setting you should have active is:
+  - SSL/TLS → Full (Strict)
+  - Always Use HTTPS is fine to keep on
+
+  No Page Rules or Redirect Rules should be set — the _redirects file handles everything. Once you remove any conflicting       
+  dashboard rules and push the latest code (with the basename fix), the URL should stay clean on refresh.
