@@ -124,7 +124,9 @@ export default function WomensCollectivePage() {
         <div className="ladies-imgs">
           <img src={img('ladies_room.webp')} alt="The Ladies' Room" loading="lazy" />
           <img src={img('pink_marble_sinks.webp')} alt="Pink marble sinks" loading="lazy" />
-          <img src={img('ladies_room_neon.webp')} alt="The Ladies Room neon sign" loading="lazy" />
+          <img src={img('ladies_room_neon.webp')} alt="The Ladies Room neon sign" loading="lazy" style={{ objectPosition: 'center 30%' }} />
+          <img src={img('womens_collective/Womens_lounge.webp')} alt="Women's Collective lounge" loading="lazy" />
+          <img src={img('womens_collective/Womens_lounge2.webp')} alt="Women's Collective lounge" loading="lazy" />
         </div>
         <div className="ladies-info">
           <span className="ladies-eyebrow">Yes, We Need to Talk About This</span>
