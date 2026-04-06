@@ -13,7 +13,7 @@ export default function WomensCollectivePage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('womens-collective.jpg')})` }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('womens-collective.webp')})` }} />
         <div className="page-hero-overlay" style={{ background: 'linear-gradient(to bottom,rgba(225,6,0,.12) 0%,rgba(22,31,40,.78) 100%)' }} />
         <div className="page-hero-content">
           <span className="page-floor-label" style={{ color: 'var(--confidence)' }}>Second Floor · 285 Liberty St. N.E.</span>
@@ -50,12 +50,12 @@ export default function WomensCollectivePage() {
       <div className="clink-split" id="clink">
         <div className="clink-img">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gridTemplateRows: '1fr 1fr', height: '100%', gap: '2px' }}>
-            <img src={img('clink_bar.jpg')} alt="Clink! bar" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-            <img src={img('womens_collective/Clink3.jpg')} alt="Clink! interior" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-            <img src={img('womens_collective/Clink2.jpg')} alt="Clink! dining" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-            <img src={img('womens_collective/Clink1.jpg')} alt="Clink! ambiance" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('clink_bar.webp')} alt="Clink! bar" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('womens_collective/Clink3.webp')} alt="Clink! interior" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('womens_collective/Clink2.webp')} alt="Clink! dining" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <img src={img('womens_collective/Clink1.webp')} alt="Clink! ambiance" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
           </div>
-          <img src={img('directory/second_floor/Clink1.png')} alt="Clink! logo" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100px', height: '100px', objectFit: 'cover', borderRadius: '50%', zIndex: 2 }} />
+          <img src={img('directory/second_floor/Clink1.webp')} alt="Clink! logo" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100px', height: '100px', objectFit: 'cover', borderRadius: '50%', zIndex: 2 }} />
           <span className="clink-badge">Now Open</span>
         </div>
         <div className="clink-info">
@@ -122,9 +122,9 @@ export default function WomensCollectivePage() {
       {/* LADIES ROOM */}
       <div className="ladies-split" id="ladies-room">
         <div className="ladies-imgs">
-          <img src={img('ladies_room.jpg')} alt="The Ladies' Room" loading="lazy" />
-          <img src={img('pink_marble_sinks.jpg')} alt="Pink marble sinks" loading="lazy" />
-          <img src={img('ladies_room_neon.jpg')} alt="The Ladies Room neon sign" loading="lazy" />
+          <img src={img('ladies_room.webp')} alt="The Ladies' Room" loading="lazy" />
+          <img src={img('pink_marble_sinks.webp')} alt="Pink marble sinks" loading="lazy" />
+          <img src={img('ladies_room_neon.webp')} alt="The Ladies Room neon sign" loading="lazy" />
         </div>
         <div className="ladies-info">
           <span className="ladies-eyebrow">Yes, We Need to Talk About This</span>

@@ -27,7 +27,7 @@ export default function Cellar54Page() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('cellar54.jpg')})` }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('cellar54.webp')})` }} />
         <div className="page-hero-overlay" style={{ background: 'linear-gradient(to bottom,rgba(26,15,13,.4) 0%,rgba(26,15,13,.88) 100%)' }} />
         <div className="page-hero-content" style={{ paddingBottom: '8rem' }}>
           <span className="page-floor-label" style={{ color: 'rgba(255,255,255,0.72)', textShadow: '0 1px 6px rgba(0,0,0,0.5)', fontSize: '0.65rem' }}>Lower Level · 285 Liberty St. N.E.</span>
@@ -105,7 +105,7 @@ export default function Cellar54Page() {
           <div className="gal-item"><img src={img('cellar54/cellar54_1.webp')} alt="Cellar 54 interior" loading="lazy" /><span className="gal-cap">The Space</span></div>
           <div className="gal-item"><img src={img('cellar54/cellar54_2.webp')} alt="Cellar 54 venue" loading="lazy" /><span className="gal-cap">The Venue</span></div>
           <div className="gal-item"><img src={img('cellar54/cellar54_tables.webp')} alt="Cellar 54 table setting" loading="lazy" /><span className="gal-cap">Dinner Setting</span></div>
-          <div className="gal-item"><img src={img('cellar54/green_room.jpg')} alt="Cellar 54 green room" loading="lazy" /><span className="gal-cap">Green Room</span></div>
+          <div className="gal-item"><img src={img('cellar54/green_room.webp')} alt="Cellar 54 green room" loading="lazy" /><span className="gal-cap">Green Room</span></div>
           <div className="gal-item"><img src={img('cellar54/cellar54_2.webp')} alt="Cellar 54 event space" loading="lazy" /><span className="gal-cap">Event Night</span></div>
         </div>
       </div>
@@ -113,7 +113,7 @@ export default function Cellar54Page() {
       {/* BOOKING */}
       <div className="booking-split" id="booking">
         <div className="booking-img">
-          <img src={img('cellar54.jpg')} alt="Cellar 54" loading="lazy" />
+          <img src={img('cellar54.webp')} alt="Cellar 54" loading="lazy" />
         </div>
         <div className="booking-form-section">
           <h2>Inquire About<br />Your Event</h2>

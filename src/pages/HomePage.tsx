@@ -60,7 +60,7 @@ export default function HomePage() {
         <div className="hero-overlay" />
         <div className="hero-content">
           <img
-            src={img('logo.png')}
+            src={img('logo.webp')}
             alt="The Forge"
             className="hero-logo-img"
             style={{ height: 'clamp(260px,40vw,480px)', width: 'auto', display: 'block', marginLeft: '-4rem', marginBottom: '0.5rem' }}
@@ -87,7 +87,7 @@ export default function HomePage() {
         </div>
         <div className="floors-grid">
           <Link to="/ground-floor" className="floor-card">
-            <img src={img('ground-floor.jpg')} alt="Ground Floor" />
+            <img src={img('ground-floor.webp')} alt="Ground Floor" />
             <div className="floor-card-body">
               <span className="floor-level">Ground Floor</span>
               <div className="floor-name">Dining &amp;<br />The Heart</div>
@@ -96,7 +96,7 @@ export default function HomePage() {
             </div>
           </Link>
           <Link to="/womens-collective" className="floor-card">
-            <img src={img('womens-collective.jpg')} alt="Women's Collective" />
+            <img src={img('womens-collective.webp')} alt="Women's Collective" />
             <div className="floor-card-body">
               <span className="floor-level">Second Floor</span>
               <div className="floor-name">Women's<br />Collective</div>
@@ -105,7 +105,7 @@ export default function HomePage() {
             </div>
           </Link>
           <Link to="/cellar-54" className="floor-card">
-            <img src={img('cellar54.jpg')} alt="Cellar 54 — Lower Level" />
+            <img src={img('cellar54.webp')} alt="Cellar 54 — Lower Level" />
             <div className="floor-card-body">
               <span className="floor-level">Lower Level</span>
               <div className="floor-name">Cellar 54</div>
@@ -114,7 +114,7 @@ export default function HomePage() {
             </div>
           </Link>
           <Link to="/anthem" className="floor-card">
-            <img src={img('anthem.jpg')} alt="Anthem — Third Floor" />
+            <img src={img('anthem.webp')} alt="Anthem — Third Floor" />
             <div className="floor-card-body">
               <span className="floor-level">Third Floor</span>
               <div className="floor-name">Anthem</div>
@@ -189,12 +189,12 @@ export default function HomePage() {
         </div>
         <div className="social-grid">
           {[
-            { src: img('homepage/vendor_market.jpeg'), alt: 'Vendor market at The Forge', cap: 'Our makers bring it every time. Market days hit different.', likes: '412' },
-            { src: img('homepage/womens_collective.jpeg'), alt: "Women's Collective", cap: "Second floor is doing something they can't quite explain.", likes: '356' },
-            { src: img('homepage/ladies_room.jpg'), alt: 'Ladies Room', cap: 'People come for the vibe. They stay for the bathroom.', likes: '891' },
-            { src: img('homepage/clink.jpg'), alt: 'Clink! bar', cap: 'Cherry blossoms and champagne on the second floor.', likes: '638' },
-            { src: img('homepage/forge_events.jpg'), alt: 'The Forge events', cap: 'The wins here look good in frames.', likes: '284' },
-            { src: img('homepage/ground_dining.JPEG'), alt: 'Ground floor dining', cap: 'Dining that makes a night into a memory.', likes: '503' },
+            { src: img('homepage/vendor_market.webp'), alt: 'Vendor market at The Forge', cap: 'Our makers bring it every time. Market days hit different.', likes: '412' },
+            { src: img('homepage/womens_collective.webp'), alt: "Women's Collective", cap: "Second floor is doing something they can't quite explain.", likes: '356' },
+            { src: img('homepage/ladies_room.webp'), alt: 'Ladies Room', cap: 'People come for the vibe. They stay for the bathroom.', likes: '891' },
+            { src: img('homepage/clink.webp'), alt: 'Clink! bar', cap: 'Cherry blossoms and champagne on the second floor.', likes: '638' },
+            { src: img('homepage/forge_events.webp'), alt: 'The Forge events', cap: 'The wins here look good in frames.', likes: '284' },
+            { src: img('homepage/ground_dining.webp'), alt: 'Ground floor dining', cap: 'Dining that makes a night into a memory.', likes: '503' },
           ].map((p, i) => (
             <div className="social-post" key={i}>
               <img src={p.src} alt={p.alt} loading="lazy" />

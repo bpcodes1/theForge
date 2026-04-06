@@ -13,7 +13,7 @@ export default function GroundFloorPage() {
       <Nav />
 
       <div className="page-hero" style={{ minHeight: '700px' }}>
-        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('ground-floor.jpg')})` }} />
+        <div className="page-hero-bg" style={{ backgroundImage: `url(${img('ground-floor.webp')})` }} />
         <div className="page-hero-overlay" />
         <div className="page-hero-content">
           <span className="page-floor-label" style={{ color: 'rgba(255,255,255,0.72)', textShadow: '0 1px 6px rgba(0,0,0,0.5)', fontSize: '0.65rem' }}>Ground Floor · 285 Liberty St. N.E.</span>
@@ -31,7 +31,7 @@ export default function GroundFloorPage() {
       {/* BONZAI */}
       <div className="feature-split" style={{ minHeight: '100vh' }}>
         <div className="feature-visual">
-          <img src={img('groundfloor/Bonzai_Entrance.JPG')} alt="Bonzai restaurant" loading="lazy" />
+          <img src={img('groundfloor/Bonzai_Entrance.webp')} alt="Bonzai restaurant" loading="lazy" />
         </div>
         <div className="feature-body feature-body--paper">
           <div className="feature-eyebrow">Ground Floor</div>
@@ -68,14 +68,14 @@ export default function GroundFloorPage() {
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '6rem' }}>
-          <img src={img('directory/first_floor/jade_dumpling.jpeg')} alt="Jade Dumplings logo" style={{ width: '100%', maxWidth: '160px', height: '160px', objectFit: 'cover', borderRadius: '50%' }} />
+          <img src={img('directory/first_floor/jade_dumpling.webp')} alt="Jade Dumplings logo" style={{ width: '100%', maxWidth: '160px', height: '160px', objectFit: 'cover', borderRadius: '50%' }} />
         </div>
       </div>
 
       {/* NOIRA */}
       <div className="feature-split feature-split--rev" style={{ height: '320px' }}>
         <div className="feature-visual" style={{ height: '100%' }}>
-          <img src={img('groundfloor/Noira1.jpg')} alt="Noira" loading="lazy" />
+          <img src={img('groundfloor/Noira1.webp')} alt="Noira" loading="lazy" />
         </div>
         <div className="feature-body feature-body--paper">
           <div className="feature-eyebrow">Ground Floor</div>
@@ -96,13 +96,13 @@ export default function GroundFloorPage() {
           </div>
         </div>
         <div className="gallery-6">
-          <div className="g6-banner"><img src={img('groundfloor/Bonzai_Overview.JPG')} alt="Bonzai overview" loading="lazy" /></div>
-          <div><img src={img('groundfloor/Ivory_Bull.JPG')} alt="Ivory Bull" loading="lazy" /></div>
+          <div className="g6-banner"><img src={img('groundfloor/Bonzai_Overview.webp')} alt="Bonzai overview" loading="lazy" /></div>
+          <div><img src={img('groundfloor/Ivory_Bull.webp')} alt="Ivory Bull" loading="lazy" /></div>
           <div className="g6-placeholder">
-            <img src={img('hero.jpg')} alt="The Forge" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img src={img('hero.webp')} alt="The Forge" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
-          <div><img src={img('groundfloor/Dreamies_Creamery.jpg')} alt="Dreamies Creamery" loading="lazy" /></div>
-          <div className="g6-banner"><img src={img('ground-floor.jpg')} alt="Ground floor dining area" loading="lazy" /></div>
+          <div><img src={img('groundfloor/Dreamies_Creamery.webp')} alt="Dreamies Creamery" loading="lazy" /></div>
+          <div className="g6-banner"><img src={img('ground-floor.webp')} alt="Ground floor dining area" loading="lazy" /></div>
         </div>
       </div>
 
