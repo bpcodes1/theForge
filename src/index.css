@@ -732,7 +732,6 @@ footer {
   background: var(--paper); padding: 4rem 2rem;
   border-right: 1px solid rgba(26,15,13,.08);
   position: sticky; top: 72px; align-self: start;
-  min-height: calc(100vh - 72px);
 }
 .faq-sidebar h3 { font-size: .62rem; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem; }
 .faq-nav { list-style: none; display: flex; flex-direction: column; gap: .15rem; }
