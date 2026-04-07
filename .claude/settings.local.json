@@ -5,7 +5,8 @@
       "Bash(cd /c/businessProjects/theForge && npm install 2>&1)",
       "Bash(cd /c/businessProjects/theForge && npx tsc --noEmit 2>&1)",
       "Bash(cd /c/businessProjects/theForge && npm run build 2>&1)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(du:*)"
     ]
   }
 }

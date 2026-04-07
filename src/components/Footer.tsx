@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <div className="footer-center">
           <Link to="/" className="forge-logo forge-logo--footer" aria-label="The Forge">
-            <img src={img('logo.png')} alt="The Forge" style={{ height: '192px', width: 'auto', display: 'block' }} />
+            <img src={img('logo.webp')} alt="The Forge" style={{ height: '192px', width: 'auto', display: 'block' }} />
           </Link>
           <p className="footer-tagline">Salem's Lifestyle Collective</p>
         </div>
