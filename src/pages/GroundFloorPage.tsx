@@ -52,10 +52,13 @@ export default function GroundFloorPage() {
       </div>
 
       {/* JADE DUMPLINGS */}
-      <div style={{ display: 'grid', gridTemplateColumns: '3fr 1fr', background: 'var(--cream)' }}>
+      <div className="jade-split">
         <div className="feature-body feature-body--cream">
           <div className="feature-eyebrow">Ground Floor</div>
-          <h2 className="feature-title">Jade Dumplings</h2>
+          <div className="jade-title-row">
+            <h2 className="feature-title">Jade Dumplings</h2>
+            <img src={img('directory/first_floor/jade_dumpling.webp')} alt="Jade Dumplings logo" className="jade-logo jade-logo--inline" />
+          </div>
           <p className="feature-text">Hand-folded. Made fresh. Locally adored. Jade Dumplings has become one of those places Salem talks about the way people talk about restaurants in cities three times its size. The dim sum is the real thing — not a shortcut in sight.</p>
           <p className="feature-text">Extended Sunday brunch runs weekly with a special dim sum spread. If you haven't been on a Sunday yet, you're not living right. First come, first seated.</p>
           <div className="feature-meta">
@@ -67,8 +70,8 @@ export default function GroundFloorPage() {
             <span className="btn" style={{ opacity: .5, cursor: 'default', pointerEvents: 'none' }}>Coming Soon</span>
           </div>
         </div>
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', paddingTop: '6rem' }}>
-          <img src={img('directory/first_floor/jade_dumpling.webp')} alt="Jade Dumplings logo" style={{ width: '100%', maxWidth: '160px', height: '160px', objectFit: 'cover', borderRadius: '50%' }} />
+        <div className="jade-logo-col">
+          <img src={img('directory/first_floor/jade_dumpling.webp')} alt="Jade Dumplings logo" className="jade-logo" />
         </div>
       </div>
 
@@ -101,7 +104,7 @@ export default function GroundFloorPage() {
           <div className="g6-placeholder">
             <img src={img('hero.webp')} alt="The Forge" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
           </div>
-          <div><img src={img('groundfloor/Dreamies_Creamery.webp')} alt="Dreamies Creamery" loading="lazy" /></div>
+          <div className="g6-hide-mobile"><img src={img('groundfloor/Dreamies_Creamery.webp')} alt="Dreamies Creamery" loading="lazy" /></div>
           <div className="g6-banner"><img src={img('ground-floor.webp')} alt="Ground floor dining area" loading="lazy" /></div>
         </div>
       </div>

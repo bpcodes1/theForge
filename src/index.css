@@ -260,6 +260,12 @@ nav.nav--light { background: var(--void); }
 .feature-split {
   display: grid; grid-template-columns: 1fr 1fr; min-height: 620px;
 }
+.jade-split { display: grid; grid-template-columns: 3fr 1fr; background: var(--cream); }
+.jade-logo-col { display: flex; align-items: flex-start; justify-content: flex-end; padding-top: 6rem; padding-right: 2rem; }
+.jade-logo { width: 160px; height: 160px; flex-shrink: 0; object-fit: cover; border-radius: 50%; }
+.jade-title-row { display: flex; align-items: center; gap: 1.2rem; }
+.jade-title-row .feature-title { margin-bottom: 0; }
+.jade-logo--inline { display: none; }
 .feature-split--rev { direction: rtl; }
 .feature-split--rev > * { direction: ltr; }
 .feature-visual { overflow: hidden; position: relative; }
@@ -921,7 +927,7 @@ behold-widget { --behold-num-cols: 6; --behold-gap: 3px; display: block; width: 
   .clink-split { grid-template-columns: 1fr; }
   .clink-img { min-height: 360px; }
   .clink-info { padding: 3.5rem 1.5rem; }
-  .ladies-split { grid-template-columns: 1fr; }
+  .ladies-split { grid-template-columns: 1fr; align-items: start; }
   .ladies-imgs { grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, 180px); min-height: unset; }
   .ladies-imgs img:first-child { grid-row: span 2; }
   .ladies-info { padding: 3rem 1.5rem; }
@@ -992,8 +998,10 @@ behold-widget { --behold-num-cols: 6; --behold-gap: 3px; display: block; width: 
   .events-list { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 600px) {
-  .ladies-imgs { grid-template-columns: 1fr 1fr; grid-template-rows: 240px 200px 200px; }
+  .ladies-imgs { grid-template-columns: 1fr 1fr; grid-template-rows: 240px 200px 200px; min-height: 644px; height: 644px; }
   .ladies-imgs img:first-child { grid-column: span 2; grid-row: span 1; }
+  .jade-logo-col { display: none; }
+  .jade-logo--inline { display: block; width: 72px; height: 72px; }
   :root { --section-h: 1.4rem; --section-v: 4rem; }
   .hero-content { margin-bottom: 6rem; }
   .hero-tagline { margin-top: 1.2rem; margin-bottom: 0; }
@@ -1050,5 +1058,6 @@ behold-widget { --behold-num-cols: 6; --behold-gap: 3px; display: block; width: 
   .gallery-6 { grid-template-columns: 1fr 1fr; }
   .gallery-6 > div { height: 200px; }
   .gallery-6 .g6-banner { grid-column: span 2; height: 220px; }
+  .g6-hide-mobile { display: none; }
   .connect-info-grid { grid-template-columns: 1fr; }
 }
