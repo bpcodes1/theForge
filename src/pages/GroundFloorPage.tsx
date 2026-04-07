@@ -76,16 +76,22 @@ export default function GroundFloorPage() {
       </div>
 
       {/* NOIRA */}
-      <div className="feature-split feature-split--rev" style={{ height: '320px' }}>
-        <div className="feature-visual" style={{ height: '100%' }}>
+      <div className="feature-split feature-split--rev">
+        <div className="feature-visual">
           <img src={img('groundfloor/Noira1.webp')} alt="Noira" loading="lazy" />
         </div>
         <div className="feature-body feature-body--paper">
           <div className="feature-eyebrow">Ground Floor</div>
           <h2 className="feature-title">Noira</h2>
-          <p className="feature-text">Coming soon to The Forge. Stay tuned for details.</p>
+          <p className="feature-text">Approachable and romantic. Thoughtfully curated wine, seasonal menu, and local art.</p>
+          <div className="feature-meta">
+            <div className="feature-meta-item"><label>Type</label><span>Wine Bar</span></div>
+            <div className="feature-meta-item"><label>Suite</label><span>Suite 135</span></div>
+            <div className="feature-meta-item"><label>Wed – Thu</label><span>12pm – 7pm</span></div>
+            <div className="feature-meta-item"><label>Fri – Sun</label><span>12pm – 8pm</span></div>
+          </div>
           <div className="feature-actions">
-            <span className="btn" style={{ opacity: .5, cursor: 'default', pointerEvents: 'none' }}>Coming Soon</span>
+            <a href="https://barnoira.com" target="_blank" rel="noopener noreferrer" className="btn btn--cherry" style={{ background: 'var(--cherry)', color: '#fff' }}>View Menu</a>
           </div>
         </div>
       </div>
