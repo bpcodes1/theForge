@@ -1,0 +1,98 @@
+IMAGE COMPRESSION LIST — The Forge
+Updated: April 2026
+Tool: https://squoosh.app — use WebP format, quality 75-80, resize width as noted
+================================================================================
+
+HOW TO USE SQUOOSH:
+1. Go to squoosh.app
+2. Drag in the image
+3. On the RIGHT side, select "WebP" from the format dropdown
+4. Set Quality to 75
+5. Click the resize arrow and set the width (keep aspect ratio locked)
+6. Download and replace the file in public/images/
+
+================================================================================
+STILL NEEDS COMPRESSION
+================================================================================
+
+File: womens_collective/Clink3.webp
+Current Size: 1.3 MB  |  Target: ~300 KB  |  Resize to: 1920px wide
+Note: This one barely moved — needs another pass at quality 75
+
+File: groundfloor/Bonzai_Couches.webp
+Current Size: 604 KB  |  Target: ~300 KB  |  Resize to: 1920px wide
+
+File: groundfloor/Dreamies_Creamery.webp
+Current Size: 608 KB  |  Target: ~200 KB  |  Resize to: 1400px wide
+
+File: ladies_room_neon.webp
+Current Size: 576 KB  |  Target: ~150 KB  |  Resize to: 1200px wide
+Note: This one was not compressed at all — same size as before
+
+File: groundfloor/Noira2.webp
+Current Size: 464 KB  |  Target: ~200 KB  |  Resize to: 1400px wide
+
+File: groundfloor/Bonzai_Dining.webp
+Current Size: 416 KB  |  Target: ~300 KB  |  Resize to: 1920px wide
+
+File: homepage/ground_dining.webp
+Current Size: 416 KB  |  Target: ~250 KB  |  Resize to: 1600px wide
+
+================================================================================
+MEDIUM PRIORITY — Not compressed yet
+================================================================================
+
+File: directory/The Magnetic Club Logo.webp
+Current Size: 336 KB  |  Target: ~80 KB  |  Resize to: 600px wide
+Note: This one was not touched — logo files should be tiny
+
+File: cellar54/green_room.webp
+Current Size: 308 KB  |  Target: ~150 KB  |  Resize to: 1200px wide
+Note: This one was not touched
+
+================================================================================
+DELETE THESE — Duplicate/unused files (safe to remove)
+================================================================================
+
+anthem copy.webp   — exact duplicate of anthem.webp
+anthem copy.jpg    — exact duplicate of anthem.jpg
+anthem.jpg         — redundant, webp version already exists
+
+================================================================================
+COMPLETED — Good sizes, no action needed
+================================================================================
+
+hero.webp                              276 KB  ✓  (was 2.0 MB)
+ground-floor.webp                      196 KB  ✓  (was 2.1 MB)
+womens-collective.webp                 156 KB  ✓  (was 1.6 MB)
+cellar54.webp                          276 KB  ✓  (was 1.4 MB)
+clink_bar.webp                         164 KB  ✓  (was 1.1 MB)
+womens_collective/Clink2.webp          124 KB  ✓  (was 1.1 MB)
+womens_collective/Clink1.webp          196 KB  ✓  (was 892 KB)
+womens_collective/Womens_lounge.webp    92 KB  ✓  (was 792 KB)
+womens_collective/Womens_lounge2.webp  232 KB  ✓  (was 1.0 MB)
+groundfloor/Bonzai_Pergola.webp        348 KB  ✓  (was 3.1 MB)
+groundfloor/Bonzai_Overview.webp       296 KB  ✓  (was 2.8 MB)
+groundfloor/Bonzai_Entrance1.webp      376 KB  ✓  (was 2.3 MB)
+groundfloor/Bonzai_Entrance.webp       356 KB  ✓  (was 1.8 MB)
+groundfloor/Noira1.webp                292 KB  ✓  (was 836 KB)
+groundfloor/Ivory_Bull.webp            192 KB  ✓
+ladies_room.webp                       232 KB  ✓  (was 836 KB)
+ladies_room2.webp                      232 KB  ✓  (was 1.0 MB)
+pink_marble_sinks.webp                 196 KB  ✓  (was 932 KB)
+homepage/ladies_room.webp              232 KB  ✓  (was 1.0 MB)
+homepage/ground_dining.webp            416 KB  ✓  (was 2.2 MB)
+FAQ/ForgeSpace2.webp                    68 KB  ✓  (was 592 KB)
+FAQ/ForgeSpace.webp                     52 KB  ✓  (was 464 KB)
+directory/second_floor/Shanti_Soul_Counseling.webp  92 KB  ✓  (was 712 KB)
+All other directory/ logo images               < 100 KB  ✓
+logo.webp / logo1.webp / logo2.webp            < 15 KB   ✓
+
+================================================================================
+TOTAL PROGRESS
+================================================================================
+
+Original folder size:   ~40 MB
+Current folder size:    ~14 MB
+Remaining to fix:       ~9 images
+Estimated final size:   ~8 MB  (after remaining fixes + deleting duplicates)
