@@ -236,7 +236,7 @@ const TENANTS: Tenant[] = [
   {
     floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Satin & Stone', category: 'Health & Wellness', categoryKey: 'wellness',
-    suite: 'Suite 264',
+    suite: 'Suite 214',
     logo: 'directory/second_floor/Satin_Stone.webp',
     logoCircle: true,
     website: 'https://www.satinandstone.net/',
