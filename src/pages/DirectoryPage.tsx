@@ -184,12 +184,6 @@ const TENANTS: Tenant[] = [
   },
   {
     floor: 'Second Floor', floorKey: 'second-floor',
-    name: 'Kimmy Neal Marketing', category: 'Office & Services', categoryKey: 'office',
-    suite: 'Suite 258',
-    website: 'https://www.kimmyneal.com/',
-  },
-  {
-    floor: 'Second Floor', floorKey: 'second-floor',
     name: 'Luxe Lash Studio', category: 'Beauty & Salon', categoryKey: 'beauty-salon',
     suite: 'Suite 216',
     logo: 'directory/second_floor/Luxe_Lash_Studio.webp',
@@ -276,6 +270,7 @@ const TENANTS: Tenant[] = [
   {
     floor: 'The Forge', floorKey: 'the-forge',
     name: 'The Magnetic Club', category: 'Community', categoryKey: 'community',
+    suite: 'Suite 210',
     logo: 'directory/The Magnetic Club Logo.webp',
     logoCircle: true,
     comingSoon: true,
