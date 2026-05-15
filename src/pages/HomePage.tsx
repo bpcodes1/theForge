@@ -12,12 +12,9 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import { img } from '../utils/img'
 
-const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December']
+import { allEvents } from '../data/events'
 
-const allEvents = [
-  { date: '2026-05-15', title: 'Grand Opening', venue: 'The Forge', category: 'events', desc: 'The official Grand Opening of The Forge. Join us for two days of celebration.' },
-  { date: '2026-05-16', title: 'Grand Opening — Day 2', venue: 'The Forge', category: 'events', desc: 'Day two of The Forge Grand Opening celebration.' },
-]
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December']
 
 export default function HomePage() {
   const navigate = useNavigate()
